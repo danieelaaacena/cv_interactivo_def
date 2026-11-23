@@ -1,0 +1,2734 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniela Aceña | CV Interactivo & Asistente IA</title>
+  <meta name="description" content="Currículum interactivo y portfolio profesional de Daniela Aceña Serrano. Estudiante de ADE (en inglés) y Data Science en ESIC University, Business Analytics y Asistente virtual Gemini.">
+  <meta name="keywords" content="Daniela Aceña, CV, Portfolio, Data Science, ADE, ESIC, Business Analytics, Inteligencia Artificial">
+  <meta name="author" content="Daniela Aceña Serrano">
+
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniela Aceña | CV Interactivo & Asistente IA">
+  <meta property="og:description" content="Doble Grado en ADE & Data Science (ESIC University). Explora mis vídeos de presentación y chatea con mi asistente virtual basado en Gemini.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Newsreader (Elegancia editorial cálida) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500;1,6..72,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       PALETA DE COLORES CÁLIDOS (BEIGE, CREMA, BLANCO, TERRACOTA)
+       ========================================================================== */
+    :root {
+      /* Fondos cálidos */
+      --bg-base: #FAF7F2;          /* Alabastro / Lino suave */
+      --bg-surface: #FFFFFF;       /* Blanco puro cálido */
+      --bg-card: #FFFFFF;          /* Tarjetas blancas sobre fondo lino */
+      --bg-card-hover: #FDFCFA;
+      --bg-subtle: #F3EFE8;        /* Arena claro / Avena */
+      --bg-sand: #EAE3D7;          /* Tono arena para detalles */
+      --bg-oat: #F6F2EC;
+
+      /* Bordes sutiles y elegantes */
+      --border-subtle: rgba(168, 148, 130, 0.22);
+      --border-medium: rgba(168, 148, 130, 0.38);
+      --border-focus: #A45A38;     /* Terracota para foco */
+
+      /* Textos legibles y cálidos */
+      --text-main: #231F1C;        /* Espresso oscuro profundo (alto contraste) */
+      --text-muted: #6B6259;       /* Topo medio cálido */
+      --text-dim: #9C9184;         /* Arena apagada */
+
+      /* Acentos cálidos y profesionales */
+      --primary: #9E5636;          /* Terracota elegante / Cuero tostado */
+      --primary-light: #B86B48;
+      --primary-dark: #814125;
+      
+      --amber: #D97706;            /* Ámbar tostado / Miel */
+      --amber-bg: #FEF7EC;
+      
+      --sage: #4E6B5D;             /* Verde salvia suave para estados activos */
+      --sage-light: #EBF2EE;
+      
+      --rose: #C04A49;
+
+      /* Radios y Sombras naturales */
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+
+      --shadow-sm: 0 2px 8px rgba(90, 70, 50, 0.04);
+      --shadow-card: 0 10px 30px -5px rgba(100, 75, 55, 0.07), 0 4px 12px rgba(0, 0, 0, 0.02);
+      --shadow-card-hover: 0 18px 40px -8px rgba(100, 75, 55, 0.13), 0 6px 16px rgba(0, 0, 0, 0.03);
+      --shadow-primary: 0 8px 25px -4px rgba(158, 86, 54, 0.28);
+
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-serif: 'Newsreader', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      color-scheme: light;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.65;
+      overflow-x: hidden;
+      min-height: 100vh;
+      /* Gradientes suaves y cálidos de iluminación ambiental */
+      background-image: 
+        radial-gradient(circle at 10% 10%, rgba(225, 205, 185, 0.35) 0%, transparent 45%),
+        radial-gradient(circle at 90% 25%, rgba(243, 225, 205, 0.4) 0%, transparent 40%),
+        radial-gradient(circle at 50% 80%, rgba(220, 200, 180, 0.25) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    /* Scrollbar personalizada en tonos arena */
+    ::-webkit-scrollbar {
+      width: 9px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-base);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D8CFBE;
+      border-radius: var(--radius-full);
+      border: 2px solid var(--bg-base);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #C4B9A4;
+    }
+
+    /* ==========================================================================
+       UTILIDADES & COMPONENTES CÁLIDOS
+       ========================================================================== */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.95rem;
+      border-radius: var(--radius-full);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-medium);
+      color: var(--primary);
+    }
+
+    .badge-sage {
+      background: var(--sage-light);
+      border-color: rgba(78, 107, 93, 0.28);
+      color: var(--sage);
+    }
+
+    .badge-amber {
+      background: var(--amber-bg);
+      border-color: rgba(217, 119, 6, 0.28);
+      color: var(--amber);
+    }
+
+    .warm-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), 
+                  box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), 
+                  border-color 0.28s ease;
+    }
+
+    .warm-card:hover {
+      border-color: var(--border-medium);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .editorial-highlight {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 500;
+      color: var(--primary);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: var(--radius-md);
+      font-size: 0.92rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+      border: none;
+      outline: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #FFFFFF;
+      box-shadow: var(--shadow-primary);
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px -4px rgba(158, 86, 54, 0.4);
+    }
+
+    .btn-secondary {
+      background: var(--bg-surface);
+      color: var(--text-main);
+      border: 1px solid var(--border-medium);
+      box-shadow: var(--shadow-sm);
+    }
+    .btn-secondary:hover {
+      background: var(--bg-subtle);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .btn-oat {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      font-weight: 700;
+    }
+    .btn-oat:hover {
+      background: var(--bg-sand);
+      border-color: var(--border-medium);
+      transform: translateY(-2px);
+    }
+
+    .icon {
+      width: 1.15rem;
+      height: 1.15rem;
+      stroke-width: 2;
+      stroke: currentColor;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       HEADER & BARRA DE NAVEGACIÓN
+       ========================================================================== */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(250, 247, 242, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: background 0.3s ease;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--primary) 0%, #C47953 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1rem;
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(158, 86, 54, 0.25);
+    }
+
+    .brand-text h1 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-main);
+    }
+
+    .brand-text span {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: block;
+      font-weight: 500;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .api-status-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.5rem 0.95rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 600;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .api-status-btn:hover {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      border-color: var(--primary);
+    }
+    .api-status-btn.connected {
+      border-color: rgba(78, 107, 93, 0.4);
+      background: var(--sage-light);
+      color: var(--sage);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--amber);
+    }
+    .api-status-btn.connected .status-dot {
+      background: var(--sage);
+      box-shadow: 0 0 7px rgba(78, 107, 93, 0.6);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      color: var(--text-main);
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.5rem;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+    .mobile-drawer.active {
+      display: flex;
+    }
+    .mobile-drawer a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    /* ==========================================================================
+       HERO SECTION: PRESENTACIÓN CÁLIDA
+       ========================================================================== */
+    .hero {
+      padding: 5rem 0 3.5rem;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.3rem, 4.6vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      color: var(--text-main);
+    }
+
+    .hero-subtitle {
+      font-size: 1.18rem;
+      color: var(--primary);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-description {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    .hero-cta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 0.6rem;
+    }
+
+    .hero-contact-bar {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      flex-wrap: wrap;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    .contact-item:hover {
+      color: var(--primary);
+    }
+
+    /* Tarjeta visual de perfil (Cálida y elegante) */
+    .hero-card {
+      padding: 2.2rem;
+      position: relative;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 1.6rem;
+      padding-bottom: 1.4rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .avatar-large {
+      width: 68px;
+      height: 68px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--primary) 0%, #D4865E 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      box-shadow: 0 10px 25px rgba(158, 86, 54, 0.25);
+    }
+
+    .profile-info h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .profile-info p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    .stat-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.9rem;
+      padding: 0.95rem;
+      border-radius: var(--radius-md);
+      background: var(--bg-subtle);
+      border: 1px solid rgba(168, 148, 130, 0.15);
+    }
+
+    .stat-icon-wrapper {
+      padding: 0.55rem;
+      border-radius: var(--radius-sm);
+      background: #FFFFFF;
+      color: var(--primary);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+    .stat-icon-wrapper.amber {
+      color: var(--amber);
+    }
+    .stat-icon-wrapper.sage {
+      color: var(--sage);
+    }
+
+    .stat-text h4 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+    .stat-text p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+      line-height: 1.45;
+    }
+
+    /* ==========================================================================
+       SECCIÓN GENERALES
+       ========================================================================== */
+    section {
+      padding: 4.8rem 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 3.2rem;
+    }
+
+    .section-header .badge {
+      margin-bottom: 0.85rem;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.85rem;
+      color: var(--text-main);
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1.02rem;
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       VÍDEOS DEL CV: TRES TARJETAS CÁLIDAS
+       ========================================================================== */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .video-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+    }
+
+    .video-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-card-hover);
+      border-color: var(--primary);
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      background: #1C1917;
+      border-bottom: 1px solid var(--border-subtle);
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+
+    .video-player {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background: #181512;
+    }
+
+    .video-badge-tag {
+      position: absolute;
+      top: 0.85rem;
+      left: 0.85rem;
+      z-index: 10;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid rgba(168, 148, 130, 0.3);
+      backdrop-filter: blur(8px);
+      color: var(--text-main);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .video-body {
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .video-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.65rem;
+    }
+
+    .video-num {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .video-duration {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-weight: 500;
+    }
+
+    .video-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.65rem;
+      color: var(--text-main);
+      line-height: 1.35;
+    }
+
+    .video-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 1.3rem;
+      flex-grow: 1;
+    }
+
+    .video-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: auto;
+      padding-top: 0.9rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .tag-pill {
+      font-size: 0.74rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      background: var(--bg-subtle);
+      color: var(--text-muted);
+      font-weight: 600;
+      border: 1px solid rgba(168, 148, 130, 0.18);
+    }
+
+    /* ==========================================================================
+       CHAT INTERACTIVO CONECTADO A GEMINI (TEMA CÁLIDO)
+       ========================================================================== */
+    .chat-container {
+      max-width: 900px;
+      margin: 0 auto;
+      height: 720px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      box-shadow: 0 20px 45px -10px rgba(100, 75, 55, 0.1), var(--shadow-card);
+    }
+
+    .chat-header {
+      padding: 1.2rem 1.6rem;
+      background: var(--bg-oat);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .chat-bot-info {
+      display: flex;
+      align-items: center;
+      gap: 0.95rem;
+    }
+
+    .chat-avatar {
+      position: relative;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--primary) 0%, #C47953 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 10px rgba(158, 86, 54, 0.2);
+    }
+
+    .chat-online-indicator {
+      position: absolute;
+      bottom: -2px;
+      right: -2px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--sage);
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 0 6px rgba(78, 107, 93, 0.5);
+    }
+
+    .chat-title h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .chat-title p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .chat-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .chat-btn-action {
+      background: #FFFFFF;
+      border: 1px solid var(--border-medium);
+      color: var(--text-muted);
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius-md);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .chat-btn-action:hover {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      border-color: var(--primary);
+    }
+
+    /* Banner aviso de API Key */
+    .chat-api-banner {
+      background: #FFF9EE;
+      border-bottom: 1px solid #F5DEB3;
+      padding: 0.75rem 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.9rem;
+      font-size: 0.84rem;
+      color: #855306;
+    }
+
+    .chat-api-banner.hidden {
+      display: none;
+    }
+
+    .chat-api-banner button {
+      background: var(--amber);
+      color: #FFFFFF;
+      border: none;
+      padding: 0.35rem 0.8rem;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+    .chat-api-banner button:hover {
+      opacity: 0.9;
+    }
+
+    /* Mensajes del chat */
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+      background: #FCFAF7;
+    }
+
+    .msg-group {
+      display: flex;
+      gap: 0.85rem;
+      max-width: 84%;
+      animation: fadeInMsg 0.25s ease-out;
+    }
+
+    @keyframes fadeInMsg {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .msg-user {
+      align-self: flex-end;
+      flex-direction: row-reverse;
+    }
+
+    .msg-bot {
+      align-self: flex-start;
+    }
+
+    .msg-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 0.25rem;
+    }
+
+    .msg-user .msg-avatar {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+
+    .msg-bot .msg-avatar {
+      background: var(--bg-sand);
+      color: var(--text-main);
+      border: 1px solid var(--border-medium);
+    }
+
+    .msg-bubble {
+      padding: 1rem 1.3rem;
+      border-radius: var(--radius-lg);
+      font-size: 0.93rem;
+      line-height: 1.65;
+      word-break: break-word;
+    }
+
+    .msg-user .msg-bubble {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #FFFFFF;
+      border-top-right-radius: 4px;
+      box-shadow: 0 4px 15px rgba(158, 86, 54, 0.2);
+    }
+
+    .msg-bot .msg-bubble {
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      border-top-left-radius: 4px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    .msg-bot .msg-bubble p {
+      margin-bottom: 0.65rem;
+    }
+    .msg-bot .msg-bubble p:last-child {
+      margin-bottom: 0;
+    }
+    .msg-bot .msg-bubble ul, .msg-bot .msg-bubble ol {
+      margin: 0.5rem 0 0.7rem 1.3rem;
+    }
+    .msg-bot .msg-bubble li {
+      margin-bottom: 0.35rem;
+    }
+    .msg-bot .msg-bubble strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+    .msg-bot .msg-bubble code {
+      font-family: var(--font-mono);
+      background: var(--bg-subtle);
+      padding: 0.18rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.85em;
+      color: var(--primary-dark);
+      border: 1px solid rgba(168, 148, 130, 0.2);
+    }
+
+    /* Indicador animado de respuesta */
+    .typing-indicator {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0.85rem 1.3rem;
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      border-top-left-radius: 4px;
+      width: fit-content;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .typing-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--primary);
+      opacity: 0.3;
+      animation: typingPulse 1.4s infinite ease-in-out;
+    }
+    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes typingPulse {
+      0%, 100% { opacity: 0.25; transform: scale(0.85); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+
+    /* Píldoras de preguntas rápidas (Estilo arena cálido) */
+    .quick-prompts-container {
+      padding: 0.85rem 1.3rem;
+      background: var(--bg-oat);
+      border-top: 1px solid var(--border-subtle);
+      overflow-x: auto;
+      white-space: nowrap;
+      display: flex;
+      gap: 0.55rem;
+    }
+
+    .quick-prompts-container::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    .quick-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius-full);
+      background: #FFFFFF;
+      border: 1px solid var(--border-medium);
+      color: var(--text-main);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .quick-pill:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #FFFFFF;
+      transform: translateY(-1px);
+    }
+
+    /* Input del chat */
+    .chat-input-area {
+      padding: 1rem 1.4rem;
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .chat-input-wrapper {
+      flex: 1;
+      position: relative;
+    }
+
+    .chat-input {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      background: var(--bg-base);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-md);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.93rem;
+      outline: none;
+      resize: none;
+      max-height: 120px;
+      line-height: 1.45;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .chat-input:focus {
+      border-color: var(--primary);
+      background: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(158, 86, 54, 0.15);
+    }
+
+    .chat-send-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #FFFFFF;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-primary);
+    }
+    .chat-send-btn:hover {
+      transform: scale(1.04);
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+    }
+    .chat-send-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* ==========================================================================
+       MODAL DE API KEY (CÁLIDO Y LIMPIO)
+       ========================================================================== */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(35, 31, 28, 0.45);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      animation: fadeInModal 0.2s ease-out;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    @keyframes fadeInModal {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .modal-card {
+      width: 100%;
+      max-width: 530px;
+      background: #FFFFFF;
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 25px 50px -12px rgba(80, 60, 40, 0.22);
+      overflow: hidden;
+      animation: scaleModal 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes scaleModal {
+      from { transform: scale(0.96) translateY(8px); }
+      to { transform: scale(1) translateY(0); }
+    }
+
+    .modal-header {
+      padding: 1.5rem 1.8rem;
+      background: var(--bg-oat);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-header h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .modal-close-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 0.4rem;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-close-btn:hover {
+      color: var(--text-main);
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    .modal-body {
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    .modal-info-box {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-md);
+      padding: 1.1rem;
+      font-size: 0.86rem;
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .form-label {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .form-label a {
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+    .form-label a:hover {
+      text-decoration: underline;
+    }
+
+    .input-password-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 0.85rem 2.8rem 0.85rem 1rem;
+      background: var(--bg-base);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-md);
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .form-input:focus {
+      border-color: var(--primary);
+      background: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(158, 86, 54, 0.15);
+    }
+
+    .toggle-visibility-btn {
+      position: absolute;
+      right: 0.8rem;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .toggle-visibility-btn:hover {
+      color: var(--text-main);
+    }
+
+    .select-model {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      background: var(--bg-base);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-md);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 500;
+      outline: none;
+      cursor: pointer;
+    }
+    .select-model:focus {
+      border-color: var(--primary);
+      background: #FFFFFF;
+    }
+
+    .modal-footer {
+      padding: 1.2rem 1.8rem;
+      background: var(--bg-oat);
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    /* ==========================================================================
+       HABILIDADES & PERFIL DETALLADO
+       ========================================================================== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .skill-card {
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+    }
+
+    .skill-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .skill-pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .skill-pill {
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 500;
+      background: var(--bg-subtle);
+      border: 1px solid rgba(168, 148, 130, 0.2);
+      color: var(--text-main);
+    }
+
+    .skill-pill.highlight {
+      background: #FFFFFF;
+      border-color: var(--primary);
+      color: var(--primary-dark);
+      font-weight: 700;
+      box-shadow: 0 2px 6px rgba(158, 86, 54, 0.1);
+    }
+
+    /* ==========================================================================
+       CONTACTO & FOOTER
+       ========================================================================== */
+    .contact-section {
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .contact-card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+      max-width: 960px;
+      margin: 0 auto 3rem;
+    }
+
+    .contact-card {
+      padding: 2rem 1.6rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: var(--text-main);
+      background: #FFFFFF;
+      border: 1px solid var(--border-medium);
+      cursor: pointer;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .contact-icon-box {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--bg-subtle);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.35rem;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .contact-card h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .contact-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      word-break: break-all;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 2.8rem 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      background: var(--bg-base);
+    }
+
+    .site-footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Toast Notification (Cálido y limpio) */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #FFFFFF;
+      border: 1px solid var(--primary);
+      color: var(--text-main);
+      padding: 0.95rem 1.5rem;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 30px rgba(90, 70, 50, 0.15);
+      z-index: 110;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE (MÓVILES Y PANTALLAS PEQUEÑAS)
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.8rem;
+      }
+      .hero-card {
+        max-width: 600px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-card-grid {
+        grid-template-columns: 1fr;
+      }
+      .chat-container {
+        height: 600px;
+      }
+      .hero {
+        padding: 3.2rem 0 2rem;
+      }
+      .hero-title {
+        font-size: 2.3rem;
+      }
+      .msg-group {
+        max-width: 92%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================
+       BARRA DE NAVEGACIÓN SUPERIOR
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#inicio" class="brand">
+        <div class="brand-avatar">DA</div>
+        <div class="brand-text">
+          <h1>Daniela Aceña</h1>
+          <span>Business & Data Science</span>
+        </div>
+      </a>
+
+      <!-- Navegación desktop -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#videos">Vídeos</a></li>
+          <li><a href="#chat-ia">Asistente IA</a></li>
+          <li><a href="#perfil">Perfil & Skills</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón estado API Key y Menú móvil -->
+      <div class="nav-actions">
+        <button id="navApiKeyBtn" class="api-status-btn" onclick="openApiKeyModal()" title="Configurar API Key de Gemini">
+          <span class="status-dot"></span>
+          <span id="navApiKeyText">API Key</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" onclick="toggleMobileMenu()">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú desplegable para móviles -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#inicio" onclick="toggleMobileMenu()">Inicio</a>
+      <a href="#videos" onclick="toggleMobileMenu()">Vídeos del CV</a>
+      <a href="#chat-ia" onclick="toggleMobileMenu()">Asistente Gemini IA</a>
+      <a href="#perfil" onclick="toggleMobileMenu()">Perfil y Competencias</a>
+      <a href="#contacto" onclick="toggleMobileMenu()">Contacto</a>
+      <div style="padding-top: 0.5rem;">
+        <button class="btn btn-secondary" style="width: 100%;" onclick="openApiKeyModal(); toggleMobileMenu();">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M21 2l-2 2m-1.5 1.5L12 11l-4-4-6 6 4 4 6-6 5.5-5.5zM15 5l4 4"/></svg>
+          Configurar Gemini API Key
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         HERO SECTION: PRESENTACIÓN & PERFIL PROFESIONAL
+         ======================================================================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div>
+            <span class="badge badge-sage">
+              <span class="status-dot" style="background:var(--sage);"></span>
+              Disponible para Prácticas & Graduación 2026/2027
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Hola, soy <span class="editorial-highlight">Daniela Aceña</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span>Doble Grado en ADE (inglés) & Data Science</span>
+            <span style="color:var(--text-dim);">•</span>
+            <span style="color:var(--text-main);">ESIC University</span>
+          </div>
+
+          <p class="hero-description">
+            Conecto la <strong>estrategia empresarial</strong> con el <strong>análisis avanzado de datos</strong> y las nuevas tecnologías. Me apasiona optimizar procesos organizacionales y transformar la información en decisiones fundamentadas de alto impacto. Formación internacional en <strong>INSEEC París</strong> y vocación de aprendizaje continuo.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#videos" class="btn btn-primary">
+              <svg class="icon" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Ver mis 3 Vídeos
+            </a>
+            <a href="#chat-ia" class="btn btn-secondary">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Chatear con mi IA
+            </a>
+            <a href="#contacto" class="btn btn-oat">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Contactar
+            </a>
+          </div>
+
+          <!-- Contact bar rápida -->
+          <div class="hero-contact-bar">
+            <a href="mailto:daniela.acena@icloud.com" class="contact-item">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              daniela.acena@icloud.com
+            </a>
+            <a href="tel:+34673207539" class="contact-item">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +34 673 20 75 39
+            </a>
+            <span class="contact-item">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Madrid, España
+            </span>
+          </div>
+        </div>
+
+        <!-- Tarjeta visual de perfil rápido -->
+        <div class="warm-card hero-card">
+          <div class="profile-header">
+            <div class="avatar-large">DA</div>
+            <div class="profile-info">
+              <h3>Daniela Aceña Serrano</h3>
+              <p>Madrid • Bilingüe ES/EN (C1) • DE (B1)</p>
+            </div>
+          </div>
+
+          <div class="stat-list">
+            <div class="stat-item">
+              <div class="stat-icon-wrapper">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div class="stat-text">
+                <h4>ESIC University & INSEEC París</h4>
+                <p>Grado en ADE impartido en inglés + Grado en Data Science con intercambio internacional en Francia.</p>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-icon-wrapper amber">
+                <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <div class="stat-text">
+                <h4>Análisis & Business Intelligence</h4>
+                <p>Power BI y Excel certificados, RStudio, análisis exploratorio y visualización aplicada a negocio.</p>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-icon-wrapper sage">
+                <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <div class="stat-text">
+                <h4>Experiencia en LICUAS S.A.</h4>
+                <p>Administración 360, gestión documental, facturación y uso de herramientas corporativas (AX, FACE).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         VÍDEOS DEL CV: TRES TARJETAS MULTIMEDIA CÁLIDAS
+         ======================================================================== -->
+    <section id="videos">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Portfolio Audiovisual</span>
+          <h2>Conóceme en <span class="editorial-highlight">Tres Dimensiones</span></h2>
+          <p>
+            Tres presentaciones que resumen mi propuesta de valor, mis proyectos aplicados en Data Science y mis competencias técnicas y personales.
+          </p>
+        </div>
+
+        <div class="video-grid">
+          <!-- TARJETA 1: PITCH PERSONAL -->
+          <article class="warm-card video-card">
+            <div class="video-wrapper">
+              <span class="video-badge-tag">01 • Elevator Pitch</span>
+              <video class="video-player" controls preload="metadata">
+                <source src="videos/1. pitch_CV_Daniela Aceña.mp4" type="video/mp4">
+                <source src="videos/1.%20pitch_CV_Daniela%20Ace%C3%B1a.mp4" type="video/mp4">
+                <source src="videos/1. pitch_CV_Daniela Aceña.mp4" type="video/mp4">
+                <source src="videos/1.%20pitch_CV_Daniela%20Acen%CC%83a.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de vídeo MP4.
+              </video>
+            </div>
+            <div class="video-body">
+              <div class="video-meta">
+                <span class="video-num">VÍDEO 1</span>
+                <span class="video-duration">
+                  <svg class="icon" style="width:0.85rem;height:0.85rem;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Presentación
+                </span>
+              </div>
+              <h3 class="video-title">Elevator Pitch & Trayectoria</h3>
+              <p class="video-desc">
+                Presentación personal sobre quién soy, mi doble titulación en ESIC, mi experiencia internacional en París y qué puedo aportar a un equipo de gestión y analítica.
+              </p>
+              <div class="video-tags">
+                <span class="tag-pill">Propuesta de Valor</span>
+                <span class="tag-pill">ADE + Data Science</span>
+                <span class="tag-pill">Internacional</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- TARJETA 2: PROYECTO DESTACADO -->
+          <article class="warm-card video-card">
+            <div class="video-wrapper">
+              <span class="video-badge-tag">02 • Proyecto</span>
+              <video class="video-player" controls preload="metadata">
+                <source src="videos/2. proyecto_CV_Daniela Aceña.mp4" type="video/mp4">
+                <source src="videos/2.%20proyecto_CV_Daniela%20Ace%C3%B1a.mp4" type="video/mp4">
+                <source src="videos/2. proyecto_CV_Daniela Aceña.mp4" type="video/mp4">
+                <source src="videos/2.%20proyecto_CV_Daniela%20Acen%CC%83a.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de vídeo MP4.
+              </video>
+            </div>
+            <div class="video-body">
+              <div class="video-meta">
+                <span class="video-num">VÍDEO 2</span>
+                <span class="video-duration">
+                  <svg class="icon" style="width:0.85rem;height:0.85rem;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Casos de Estudio
+                </span>
+              </div>
+              <h3 class="video-title">Proyecto Destacado & Metodología</h3>
+              <p class="video-desc">
+                Desglose de proyectos aplicados: análisis exploratorio y visualización con RStudio y Excel, modelos de negocio sostenibles e investigación sobre branding experiencial.
+              </p>
+              <div class="video-tags">
+                <span class="tag-pill">Data Analysis</span>
+                <span class="tag-pill">RStudio & Excel</span>
+                <span class="tag-pill">Business Strategy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- TARJETA 3: HABILIDADES -->
+          <article class="warm-card video-card">
+            <div class="video-wrapper">
+              <span class="video-badge-tag">03 • Competencias</span>
+              <video class="video-player" controls preload="metadata">
+                <source src="videos/3. habilidades_CV_Daniela Aceña.mp4" type="video/mp4">
+                <source src="videos/3.%20habilidades_CV_Daniela%20Ace%C3%B1a.mp4" type="video/mp4">
+                <source src="videos/3. habilidades_CV_Daniela Aceña.mp4" type="video/mp4">
+                <source src="videos/3.%20habilidades_CV_Daniela%20Acen%CC%83a.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de vídeo MP4.
+              </video>
+            </div>
+            <div class="video-body">
+              <div class="video-meta">
+                <span class="video-num">VÍDEO 3</span>
+                <span class="video-duration">
+                  <svg class="icon" style="width:0.85rem;height:0.85rem;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Hard & Soft Skills
+                </span>
+              </div>
+              <h3 class="video-title">Habilidades Técnicas & Personales</h3>
+              <p class="video-desc">
+                Competencias en Power BI, Azure, AWS y ERPs corporativos, sumadas a capacidades clave: adaptabilidad, mentalidad internacional, curiosidad y trabajo colaborativo.
+              </p>
+              <div class="video-tags">
+                <span class="tag-pill">Power BI & Cloud</span>
+                <span class="tag-pill">Inglés C1 / Alemán B1</span>
+                <span class="tag-pill">Adaptabilidad</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CHAT INTERACTIVO CONECTADO A GEMINI
+         ======================================================================== -->
+    <section class="chat-section" id="chat-ia">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Inteligencia Artificial Conversacional</span>
+          <h2>Pregunta lo que quieras a mi <span class="editorial-highlight">Asistente Virtual</span></h2>
+          <p>
+            Alimentado en tiempo real con la API de Google Gemini y configurado rigurosamente con los datos oficiales de mi perfil profesional.
+          </p>
+        </div>
+
+        <div class="warm-card chat-container">
+          <!-- Cabecera del chat -->
+          <div class="chat-header">
+            <div class="chat-bot-info">
+              <div class="chat-avatar">
+                AI
+                <div class="chat-online-indicator"></div>
+              </div>
+              <div class="chat-title">
+                <h3>
+                  Daniela Virtual AI
+                  <span id="chatModelBadge" class="badge" style="font-size:0.68rem;padding:0.2rem 0.55rem;background:#FFFFFF;">gemini-3.8-flash</span>
+                </h3>
+                <p>Respuestas verificadas según el CV oficial • Español / English</p>
+              </div>
+            </div>
+
+            <div class="chat-actions">
+              <button class="chat-btn-action" onclick="openApiKeyModal()" title="Configurar o cambiar API Key">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M10.85 12.15L19 4M18 5l2 2M15 8l2 2"/></svg>
+                <span class="hide-mobile">API Key</span>
+              </button>
+              <button class="chat-btn-action" onclick="clearChatHistory()" title="Reiniciar conversación">
+                <svg class="icon" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                <span class="hide-mobile">Limpiar</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Banner aviso de API Key no configurada -->
+          <div class="chat-api-banner" id="chatApiBanner">
+            <div style="display:flex;align-items:center;gap:0.6rem;">
+              <svg class="icon" style="color:var(--amber);" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <span>Introduce tu <strong>API Key gratuita de Gemini</strong> para consultar en vivo. (También puedes probar las preguntas rápidas con modo muestra).</span>
+            </div>
+            <button onclick="openApiKeyModal()">Configurar Clave</button>
+          </div>
+
+          <!-- Área de mensajes -->
+          <div class="chat-messages" id="chatMessages">
+            <!-- Mensaje de bienvenida inicial -->
+            <div class="msg-group msg-bot">
+              <div class="msg-avatar">AI</div>
+              <div class="msg-bubble">
+                <p>¡Hola! Soy el <strong>asistente virtual interactivo de Daniela Aceña Serrano</strong>, impulsado por Google Gemini.</p>
+                <p>Estoy configurada para responder a reclutadores y empresas con la máxima fidelidad sobre:</p>
+                <ul>
+                  <li>🎓 Su doble titulación en ADE y Data Science en ESIC University y su intercambio en INSEEC París.</li>
+                  <li>💼 Su experiencia en administración empresarial y control en LICUAS S.A.</li>
+                  <li>📊 Sus proyectos en análisis exploratorio de datos (RStudio, Excel) y estrategia.</li>
+                  <li>🛠️ Sus certificaciones oficiales en Power BI, Excel y Azure.</li>
+                  <li>🌍 Nivel de idiomas (Español nativo, Inglés C1, Alemán B1).</li>
+                </ul>
+                <p style="margin-top:0.4rem;font-size:0.88rem;color:var(--primary);">¿Qué te gustaría saber sobre el perfil de Daniela?</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sugerencias de preguntas rápidas estilo pills -->
+          <div class="quick-prompts-container">
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Cuál es la formación académica de Daniela?')">
+              🎓 Formación académica
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Cuál fue su experiencia en LICUAS y qué herramientas utilizó?')">
+              💼 Experiencia en LICUAS
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Qué herramientas de Data Science y Business Intelligence domina?')">
+              📊 Herramientas y Data Science
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Qué proyectos académicos destacados ha realizado?')">
+              🚀 Proyectos destacados
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Qué idiomas habla y qué nivel tiene?')">
+              🌍 Idiomas y certificaciones
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Cuál es su propuesta de valor para una empresa?')">
+              🎯 Propuesta de valor
+            </button>
+          </div>
+
+          <!-- Input para escribir mensajes -->
+          <div class="chat-input-area">
+            <div class="chat-input-wrapper">
+              <textarea 
+                id="chatInput" 
+                class="chat-input" 
+                rows="1" 
+                placeholder="Haz una pregunta sobre Daniela (ej. ¿Qué certificaciones tiene?)..." 
+                onkeydown="handleChatKeydown(event)"
+                oninput="autoResizeTextarea(this)"></textarea>
+            </div>
+            <button class="chat-send-btn" id="chatSendBtn" onclick="handleSendMessage()" title="Enviar mensaje">
+              <svg class="icon" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN: PERFIL DETALLADO & COMPETENCIAS
+         ======================================================================== -->
+    <section id="perfil">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Skills & Background</span>
+          <h2>Especialización & <span class="editorial-highlight">Competencias Clave</span></h2>
+          <p>
+            Equilibrio estratégico entre visión empresarial, analítica de datos y habilidades interpersonales.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Tarjeta 1: Data & BI -->
+          <div class="warm-card skill-card">
+            <h3>
+              <svg class="icon" style="color:var(--amber);" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              Análisis & Business Intelligence
+            </h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);">Herramientas para exploración, modelado y visualización de conjuntos de datos empresariales:</p>
+            <div class="skill-pill-list">
+              <span class="skill-pill highlight">Power BI (Certificada)</span>
+              <span class="skill-pill highlight">Microsoft Excel (Certificada)</span>
+              <span class="skill-pill">RStudio</span>
+              <span class="skill-pill">Visualización de datos</span>
+              <span class="skill-pill">Análisis exploratorio (EDA)</span>
+              <span class="skill-pill">Estadística aplicada</span>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: Cloud, Tech & IA -->
+          <div class="warm-card skill-card">
+            <h3>
+              <svg class="icon" style="color:var(--primary);" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              Tecnología, Cloud e IA
+            </h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);">Formación académica e interés en computación en la nube y modelos de IA generativa:</p>
+            <div class="skill-pill-list">
+              <span class="skill-pill highlight">Azure (Certificada)</span>
+              <span class="skill-pill">AWS (Prácticas académicas)</span>
+              <span class="skill-pill highlight">Inteligencia Artificial & Big Data</span>
+              <span class="skill-pill">IA aplicada a procesos</span>
+              <span class="skill-pill">Transformación digital</span>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3: Gestión & Idiomas -->
+          <div class="warm-card skill-card">
+            <h3>
+              <svg class="icon" style="color:var(--sage);" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Gestión Empresarial & Idiomas
+            </h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);">Herramientas operativas reales y dominio multilingüe para entornos multiculturales:</p>
+            <div class="skill-pill-list">
+              <span class="skill-pill highlight">Inglés C1 (Cambridge)</span>
+              <span class="skill-pill">Español (Nativo)</span>
+              <span class="skill-pill">Alemán (B1)</span>
+              <span class="skill-pill">ERP Microsoft AX</span>
+              <span class="skill-pill">Scan Visio & FACE</span>
+              <span class="skill-pill">Facturae & Control de gestión</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN: CONTACTO DIRECTO CÁLIDO
+         ======================================================================== -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-sage">Conectemos</span>
+          <h2>Información de <span class="editorial-highlight">Contacto</span></h2>
+          <p>
+            ¿Interesado en mi perfil o en coordinar una entrevista profesional? Estaré encantada de conversar.
+          </p>
+        </div>
+
+        <div class="contact-card-grid">
+          <!-- Tarjeta Email -->
+          <div class="warm-card contact-card" onclick="copyToClipboard('daniela.acena@icloud.com', 'Correo electrónico copiado al portapapeles')">
+            <div class="contact-icon-box">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h4>Correo Electrónico</h4>
+            <p>daniela.acena@icloud.com</p>
+            <span style="font-size:0.78rem;color:var(--primary);font-weight:700;margin-top:0.3rem;">Haz clic para copiar</span>
+          </div>
+
+          <!-- Tarjeta Teléfono -->
+          <a href="tel:+34673207539" class="warm-card contact-card">
+            <div class="contact-icon-box" style="color:var(--amber);">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h4>Teléfono Móvil</h4>
+            <p>+34 673 20 75 39</p>
+            <span style="font-size:0.78rem;color:var(--amber);font-weight:700;margin-top:0.3rem;">Llamar directamente</span>
+          </a>
+
+          <!-- Tarjeta Ubicación -->
+          <div class="warm-card contact-card">
+            <div class="contact-icon-box" style="color:var(--sage);">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h4>Ubicación</h4>
+            <p>Madrid, España</p>
+            <span style="font-size:0.78rem;color:var(--sage);font-weight:700;margin-top:0.3rem;">Apertura a proyectos internacionales</span>
+          </div>
+        </div>
+
+        <div style="text-align:center;">
+          <a href="mailto:daniela.acena@icloud.com" class="btn btn-primary" style="padding:0.95rem 2.4rem;font-size:1.02rem;">
+            <svg class="icon" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Enviar Mensaje por Correo
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Daniela Aceña Serrano. Todos los derechos reservados.</p>
+      <p style="font-size:0.84rem;color:var(--text-dim);">
+        Diseñado con HTML5, CSS y JavaScript integrados • Conectado a Google Gemini API • Desplegable en GitHub Pages
+      </p>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL: CONFIGURACIÓN DE GEMINI API KEY
+       ======================================================================== -->
+  <div class="modal-overlay" id="apiKeyModal" onclick="handleModalOverlayClick(event)">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>
+          <svg class="icon" style="color:var(--primary);" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M10.85 12.15L19 4M18 5l2 2M15 8l2 2"/></svg>
+          Configuración Gemini API Key
+        </h3>
+        <button class="modal-close-btn" onclick="closeApiKeyModal()" aria-label="Cerrar modal">
+          <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-info-box">
+          <p>
+            🔒 <strong>100% Seguro y Privado:</strong> Tu API Key se almacena exclusivamente en tu navegador (<code>localStorage</code>) y se envía de forma directa a la API oficial de Google Gemini. Nunca pasa por servidores intermedios.
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="apiKeyInput">
+            <span>Tu Google Gemini API Key</span>
+            <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">
+              Obtener clave gratis en Google AI Studio ↗
+            </a>
+          </label>
+          <div class="input-password-wrapper">
+            <input 
+              type="password" 
+              id="apiKeyInput" 
+              class="form-input" 
+              placeholder="AIzaSy..." 
+              autocomplete="off" 
+              spellcheck="false"
+            />
+            <button type="button" class="toggle-visibility-btn" id="togglePasswordBtn" onclick="toggleApiKeyVisibility()" title="Mostrar/Ocultar clave">
+              <svg class="icon" id="eyeIcon" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <span style="font-size:0.78rem;color:var(--text-dim);">
+            Empieza habitualmente por <code>AIzaSy...</code>
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modelSelect">
+            <span>Modelo de Gemini</span>
+          </label>
+          <select id="modelSelect" class="select-model">
+            <option value="gemini-3.8-flash" selected>gemini-3.8-flash (Recomendado - Modelo estable)</option>
+            <option value="gemini-1.5-flash">gemini-1.5-flash (Alta estabilidad)</option>
+            <option value="gemini-1.5-pro">gemini-1.5-pro (Mayor profundidad de razonamiento)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="removeApiKey()" style="color:var(--rose);">
+          <svg class="icon" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+          Eliminar clave
+        </button>
+        <div style="display:flex;gap:0.6rem;align-items:center;">
+          <button type="button" class="btn btn-secondary" id="testKeyBtn" onclick="testGeminiConnection()">
+            ⚡ Probar Conexión
+          </button>
+          <button class="btn btn-primary" onclick="saveApiKey()">
+            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Guardar y Conectar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Elemento Toast emergente -->
+  <div class="toast" id="toast">
+    <svg class="icon" style="color:var(--sage);" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastMessage">Acción completada</span>
+  </div>
+
+  <!-- ========================================================================
+       JAVASCRIPT: INTEGRACIÓN DE GEMINI Y COMPORTAMIENTO INTERACTIVO
+       ======================================================================== -->
+  <script>
+    /* ==========================================================================
+       1. BASE DE CONOCIMIENTO Y SYSTEM INSTRUCTION DE GEMINI
+       ========================================================================== */
+    const DANIELA_CV_SYSTEM_PROMPT = `
+Eres el asistente virtual profesional de Daniela Aceña Serrano para su currículum web interactivo.
+Tu función es responder a preguntas de reclutadores, empresas y evaluadores sobre su formación, experiencia, proyectos, herramientas, idiomas, competencias y disponibilidad, actuando con máxima fidelidad a su perfil verificado.
+
+BASE DE CONOCIMIENTO OFICIAL DE DANIELA ACEÑA:
+1. DATOS PERSONALES Y CONTACTO:
+- Nombre completo: Daniela Aceña Serrano (Nombre profesional: Daniela Aceña).
+- Ubicación: Madrid, España.
+- Email: daniela.acena@icloud.com
+- Teléfono: +34 673 20 75 39
+- Idiomas: Español (Nativo), Inglés (C1 - Cambridge Certificate), Alemán (B1).
+
+2. TITULAR Y PERFIL:
+- Titular: Estudiante de Business Administration and Management y Data Science | Business Analytics | Tecnología e Innovación.
+- Universidad: ESIC University (Madrid, España), periodo 2022–2027. Doble titulación: Bachelor’s Degree in Business Administration and Management (impartido íntegramente en inglés) y Grado en Data Science.
+- Experiencia académica internacional: Intercambio Erasmus en INSEEC Business School en París, Francia (2024), cursando Business Administration en entorno multicultural en inglés.
+- Bachillerato: International Baccalaureate (IB).
+
+3. EXPERIENCIA PROFESIONAL:
+- LICUAS S.A. – Departamento de Administración 360 (Octubre 2025 – Marzo 2026):
+  * Tareas y funciones: Gestión y organización documental, apoyo administrativo y comunicación interdepartamental, apoyo en procesos de facturación y gestión de facturas, revisión de horas y albaranes.
+  * Herramientas empresariales utilizadas: ERP Microsoft AX, Scan Visio, FACE y Facturae.
+  * Descripción: Experiencia real en procesos operativos y administrativos corporativos con herramientas de gestión diaria.
+
+4. HABILIDADES TÉCNICAS Y HERRAMIENTAS:
+- Análisis de datos y visualización: RStudio, Microsoft Excel (certificada), Power BI (certificada), visualización y elaboración de gráficos, análisis exploratorio de datos (EDA).
+- Tecnología, Cloud e Inteligencia Artificial: Conocimientos académicos sobre Big Data e Inteligencia Artificial, prácticas académicas con servicios de Microsoft Azure (certificada) y AWS. Interés en la aplicación de la IA a la toma de decisiones empresariales.
+- Gestión empresarial y operativa: ERP AX, Scan Visio, FACE, Facturae, gestión documental y facturación.
+- Competencias personales: Adaptabilidad, mentalidad internacional, curiosidad y aprendizaje continuo, proactividad, comunicación bilingüe y trabajo en equipo colaborativo.
+
+5. PROYECTOS ACADÉMICOS DESTACADOS:
+- Proyecto 1: Análisis y visualización de datos (Data Science) con RStudio y Excel, evaluando relaciones multivariables, correlaciones, histogramas y visualizaciones analíticas.
+- Proyecto 2: Plan de negocio y estrategia empresarial (propuestas Pure Beauty - cosmética D2C/retail y Healthy Snacks para jóvenes/estudiantes).
+- Proyecto 3: TFG sobre Disney y Branding Experiencial ("The integration of emotional branding, sensory advertising and experiential public relations: The journey from brand promise to the theme park experience"), combinando modelo cualitativo de Bernd H. Schmitt y encuesta a 89 participantes con escala Likert.
+
+6. DISPONIBILIDAD:
+- Situación: Estudiante universitaria finalizando el doble grado.
+- Interés: Prácticas y primeras oportunidades profesionales en business analytics, administración y gestión empresarial, análisis de datos, tecnología e innovación.
+- Tipo de jornada, modalidad y fecha de incorporación: Pendientes de confirmar según calendario académico y propuesta de la empresa.
+
+REGLAS OBLIGATORIAS:
+1. Responde únicamente con información contenida en este perfil.
+2. No inventes empresas, cargos, responsabilidades, resultados, fechas, certificaciones, titulaciones, niveles técnicos ni logros.
+3. Distingue rigurosamente entre experiencia profesional en LICUAS y proyectos realizados en el contexto académico.
+4. Presenta el Erasmus en INSEEC Business School de París como experiencia académica internacional.
+5. Indica con precisión: inglés C1 y alemán B1.
+6. No describas a Daniela como desarrolladora de software senior ni afirmes que tiene años de experiencia en desarrollo de software puro; su fuerte es la intersección entre ADE, Business Analytics y Data Science.
+7. No afirmes que domina lenguajes de programación o bases de datos no confirmados en este perfil.
+8. Si te preguntan por información no incluida en este perfil, responde amablemente y con claridad: "Ese dato no está especificado en mi perfil actual".
+9. Si preguntan por disponibilidad concreta, jornada o modalidad, explica que está pendiente de confirmar directamente con ella.
+10. Mantén un tono profesional, claro, cercano, empático y conciso. Responde en el idioma en que te hablen (español o inglés).
+11. Relaciona su formación empresarial con sus conocimientos analíticos de Data Science y tecnología para aportar valor.
+`;
+
+    /* ==========================================================================
+       2. GESTIÓN DE ESTADO (API KEY, HISTORIAL Y MODELO)
+       ========================================================================== */
+    const STORAGE_KEY = 'daniela_gemini_api_key';
+    const MODEL_STORAGE_KEY = 'daniela_gemini_model';
+
+    let currentApiKey = localStorage.getItem(STORAGE_KEY) || '';
+    let currentModel = localStorage.getItem(MODEL_STORAGE_KEY);
+    if (!currentModel || currentModel.includes('gemini-2.0')) {
+      currentModel = 'gemini-3.8-flash';
+      localStorage.setItem(MODEL_STORAGE_KEY, currentModel);
+    }
+    let conversationHistory = [];
+    let isGenerating = false;
+
+    // Inicialización al cargar el DOM
+    document.addEventListener('DOMContentLoaded', () => {
+      initApiStatus();
+      initModelSelector();
+      initVideoSync();
+    });
+
+    // Pausar los otros vídeos cuando uno empieza a reproducirse
+    function initVideoSync() {
+      const allVideos = document.querySelectorAll('video');
+      allVideos.forEach(video => {
+        video.addEventListener('play', () => {
+          allVideos.forEach(otherVideo => {
+            if (otherVideo !== video && !otherVideo.paused) {
+              otherVideo.pause();
+            }
+          });
+        });
+      });
+    }
+
+    function initApiStatus() {
+      const navBtn = document.getElementById('navApiKeyBtn');
+      const navText = document.getElementById('navApiKeyText');
+      const banner = document.getElementById('chatApiBanner');
+      const modelBadge = document.getElementById('chatModelBadge');
+
+      if (modelBadge) modelBadge.textContent = currentModel;
+
+      if (currentApiKey && currentApiKey.trim().length > 10) {
+        navBtn.classList.add('connected');
+        navText.textContent = 'API Key Conectada';
+        banner.classList.add('hidden');
+      } else {
+        navBtn.classList.remove('connected');
+        navText.textContent = 'Configurar API Key';
+        banner.classList.remove('hidden');
+      }
+    }
+
+    function initModelSelector() {
+      const select = document.getElementById('modelSelect');
+      if (select) {
+        select.value = currentModel;
+        select.addEventListener('change', (e) => {
+          currentModel = e.target.value;
+          localStorage.setItem(MODEL_STORAGE_KEY, currentModel);
+          const badge = document.getElementById('chatModelBadge');
+          if (badge) badge.textContent = currentModel;
+          showToast(`Modelo cambiado a ${currentModel}`);
+        });
+      }
+    }
+
+    /* ==========================================================================
+       3. MODAL Y CONTROL DE API KEY
+       ========================================================================== */
+    function openApiKeyModal() {
+      const modal = document.getElementById('apiKeyModal');
+      const input = document.getElementById('apiKeyInput');
+      input.value = currentApiKey;
+      modal.classList.add('active');
+      setTimeout(() => input.focus(), 150);
+    }
+
+    function closeApiKeyModal() {
+      const modal = document.getElementById('apiKeyModal');
+      modal.classList.remove('active');
+    }
+
+    function handleModalOverlayClick(e) {
+      if (e.target.id === 'apiKeyModal') {
+        closeApiKeyModal();
+      }
+    }
+
+    function toggleApiKeyVisibility() {
+      const input = document.getElementById('apiKeyInput');
+      const icon = document.getElementById('eyeIcon');
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.innerHTML = '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/>';
+      } else {
+        input.type = 'password';
+        icon.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>';
+      }
+    }
+
+    function saveApiKey() {
+      const input = document.getElementById('apiKeyInput');
+      const val = input.value.trim();
+      
+      if (!val) {
+        showToast('Por favor introduce una API Key válida');
+        return;
+      }
+
+      currentApiKey = val;
+      localStorage.setItem(STORAGE_KEY, currentApiKey);
+      initApiStatus();
+      closeApiKeyModal();
+      showToast('API Key de Gemini configurada con éxito ✅');
+    }
+
+    function removeApiKey() {
+      currentApiKey = '';
+      localStorage.removeItem(STORAGE_KEY);
+      document.getElementById('apiKeyInput').value = '';
+      initApiStatus();
+      closeApiKeyModal();
+      showToast('API Key eliminada');
+    }
+
+    /* ==========================================================================
+       4. CLIENTE API DE GEMINI Y BASE DE CONOCIMIENTO RESILIENTE
+       ========================================================================== */
+    function extractTextFromCandidate(candidate) {
+      if (!candidate || !candidate.content || !candidate.content.parts) return '';
+      const parts = candidate.content.parts;
+      // 1. Filtrar partes que no sean de pensamiento (thought / reasoning)
+      const textParts = parts.filter(p => !p.thought && p.text);
+      if (textParts.length > 0) {
+        return textParts.map(p => p.text).join('\n').trim();
+      }
+      // 2. Si no hay flag 'thought', buscar de atrás hacia adelante partes con texto
+      for (let i = parts.length - 1; i >= 0; i--) {
+        if (parts[i].text && !parts[i].thought) {
+          return parts[i].text.trim();
+        }
+      }
+      return parts.map(p => p.text || '').join('\n').trim();
+    }
+
+    async function callGeminiApi(promptText) {
+      // Lista de modelos ordenados por prioridad para reintento automático si uno no está disponible
+      const modelsToTry = [
+        currentModel,
+        'gemini-3.8-flash',
+        'gemini-2.5-flash',
+        'gemini-1.5-flash',
+        'gemini-2.0-flash',
+        'gemini-1.5-pro'
+      ].filter((v, i, a) => v && a.indexOf(v) === i);
+
+      const cleanKey = currentApiKey.trim();
+      let lastError = null;
+
+      for (const modelName of modelsToTry) {
+        try {
+          const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${encodeURIComponent(cleanKey)}`;
+
+          const contentsPayload = [
+            ...conversationHistory,
+            { role: "user", parts: [{ text: promptText }] }
+          ];
+
+          const requestBody = {
+            systemInstruction: {
+              parts: [{ text: DANIELA_CV_SYSTEM_PROMPT }]
+            },
+            contents: contentsPayload,
+            generationConfig: {
+              temperature: 0.35,
+              maxOutputTokens: 1000
+            }
+          };
+
+          const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestBody)
+          });
+
+          if (!response.ok) {
+            const errorData = await response.json().catch(() => ({}));
+            const errMessage = errorData.error?.message || `HTTP ${response.status}`;
+
+            // Si el modelo da error (404, 400, etc.), registrar y continuar probando los demás modelos
+            console.warn(`[Gemini] Modelo ${modelName} devolvió error (${errMessage}). Probando siguiente modelo...`);
+            lastError = new Error(errMessage);
+
+            // Si hay error 400 y tenemos historial, reintentar turno único
+            if (response.status === 400 && conversationHistory.length > 0) {
+              const singleTurnBody = {
+                systemInstruction: { parts: [{ text: DANIELA_CV_SYSTEM_PROMPT }] },
+                contents: [{ role: "user", parts: [{ text: promptText }] }],
+                generationConfig: { temperature: 0.35, maxOutputTokens: 1000 }
+              };
+              const retryRes = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(singleTurnBody)
+              });
+              if (retryRes.ok) {
+                const data = await retryRes.json();
+                const text = extractTextFromCandidate(data.candidates?.[0]);
+                if (text) {
+                  if (modelName !== currentModel) {
+                    currentModel = modelName;
+                    localStorage.setItem(MODEL_STORAGE_KEY, currentModel);
+                    const badge = document.getElementById('chatModelBadge');
+                    if (badge) badge.textContent = currentModel;
+                  }
+                  return text;
+                }
+              }
+            }
+
+            continue;
+          }
+
+          const data = await response.json();
+          const generatedText = extractTextFromCandidate(data.candidates?.[0]);
+
+          if (generatedText) {
+            if (modelName !== currentModel) {
+              currentModel = modelName;
+              localStorage.setItem(MODEL_STORAGE_KEY, currentModel);
+              const badge = document.getElementById('chatModelBadge');
+              if (badge) badge.textContent = currentModel;
+            }
+            return generatedText;
+          } else {
+            console.warn(`[Gemini] Sin texto en ${modelName}, probando siguiente modelo...`);
+            continue;
+          }
+        } catch (err) {
+          lastError = err;
+          console.warn(`[Gemini] Error en fetch con ${modelName}:`, err.message);
+          continue;
+        }
+      }
+
+      throw lastError || new Error('No se pudo establecer conexión con los modelos de Gemini.');
+    }
+
+    /* Probar conexión de la API Key en vivo */
+    async function testGeminiConnection() {
+      const input = document.getElementById('apiKeyInput');
+      const key = input.value.trim();
+      const testBtn = document.getElementById('testKeyBtn');
+      if (!key) {
+        showToast('Por favor introduce primero tu API Key');
+        return;
+      }
+      if (testBtn) {
+        testBtn.disabled = true;
+        testBtn.textContent = 'Probando...';
+      }
+
+      const testModels = [currentModel, 'gemini-3.8-flash', 'gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-2.0-flash'];
+      let workingModel = null;
+      let lastErrMsg = '';
+
+      for (const m of testModels) {
+        try {
+          const url = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${encodeURIComponent(key)}`;
+          const res = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ contents: [{ parts: [{ text: "ping" }] }] })
+          });
+          if (res.ok) {
+            workingModel = m;
+            break;
+          } else {
+            const errData = await res.json().catch(() => ({}));
+            lastErrMsg = errData.error?.message || `HTTP ${res.status}`;
+          }
+        } catch (e) {
+          lastErrMsg = e.message;
+        }
+      }
+
+      if (testBtn) {
+        testBtn.disabled = false;
+        testBtn.textContent = '⚡ Probar Conexión';
+      }
+
+      if (workingModel) {
+        currentModel = workingModel;
+        localStorage.setItem(MODEL_STORAGE_KEY, currentModel);
+        currentApiKey = key;
+        localStorage.setItem(STORAGE_KEY, currentApiKey);
+        initApiStatus();
+        showToast(`✅ ¡Conectado con éxito a ${workingModel}!`);
+      } else {
+        showToast('⚠️ Clave no válida o sin cuota');
+        alert(`Aviso de Google Gemini:\n\n${lastErrMsg}\n\nNota: Tu asistente virtual responderá de todas formas utilizando la base de conocimiento oficial verificada de Daniela.`);
+      }
+    }
+
+    /* Base de conocimiento oficial verificada (Funciona siempre, con o sin API Key) */
+    function getKnowledgeBaseResponse(query) {
+      const q = query.toLowerCase().trim();
+      const isEnglish = /\b(tell|what|where|who|how|education|experience|languages|skills|projects|available|contact|degree|studies|university)\b/i.test(q);
+
+      // 1. Saludos
+      if (/\b(hola|buenas|buenos d[ií]as|buenas tardes|hello|hi|hey|qu[eé] tal)\b/i.test(q)) {
+        if (isEnglish) {
+          return `Hello! I am the **official virtual assistant of Daniela Aceña Serrano**.\n\nI can answer any questions about her **Double Degree in Business Administration & Data Science at ESIC**, her experience in **LICUAS S.A.**, tools (**Power BI, Excel, RStudio, Azure**), international background in Paris, or languages.\n\nHow can I help you today?`;
+        }
+        return `¡Hola! Soy el **asistente virtual oficial de Daniela Aceña Serrano**.\n\nPuedo responder a cualquier pregunta sobre su **Doble Grado en ADE y Data Science en ESIC**, su experiencia profesional en **LICUAS S.A.**, sus herramientas (**Power BI, Excel, RStudio, Azure**), su intercambio en París o sus idiomas.\n\n¿Qué te gustaría saber sobre su perfil?`;
+      }
+
+      // 2. Presentación / Pitch / Propuesta de valor
+      if (/\b(qui[eé]n eres|qui[eé]n es|pres[eé]ntate|presentaci[oó]n|h[aá]blame de ti|sobre ti|propuesta de valor|por qu[eé] contratarte|tell me about yourself|who are you|pitch|resumen)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**About Daniela Aceña:**\n\nDaniela is a student pursuing a **Double Degree in Business Administration and Management (taught 100% in English) and Data Science** at **ESIC University** (Madrid, 2022–2027).\n\n• **Core Value Proposition:** She connects business strategic vision with advanced data analytics and Artificial Intelligence to optimize corporate decision-making.\n• **International Background:** Erasmus exchange at **INSEEC Business School** in Paris (2024).\n• **Professional Experience:** Practical experience in Corporate Administration 360 at **LICUAS S.A.**\n• **Languages:** Native Spanish, C1 Advanced English, B1 German.`;
+        }
+        return `**Perfil y Propuesta de Valor de Daniela Aceña:**\n\nDaniela es estudiante del **Doble Grado en Administración y Dirección de Empresas (impartido íntegramente en inglés) y Data Science** en **ESIC University** en Madrid (2022–2027).\n\n• **Propuesta de valor:** Une la visión de negocio y estrategia empresarial con el análisis cuantitativo y la Inteligencia Artificial para optimizar procesos y fundamentar decisiones.\n• **Perfil internacional:** Cursó su intercambio Erasmus en **INSEEC Business School en París** (2024) en un entorno multicultural.\n• **Experiencia real:** Prácticas en el departamento de Administración 360 en **LICUAS S.A.**\n• **Idiomas:** Español nativo, Inglés C1 certificado y Alemán B1.`;
+      }
+
+      // 3. Formación Académica
+      if (/\b(estudi[oó]|estudiado|estudios|formaci[oó]n|carrera|universidad|grado|doble grado|esic|ade|data science|par[ií]s|erasmus|inseec|bachillerato|ib|education|degree|studies)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Academic Background of Daniela Aceña:**\n\n1. **ESIC University (Madrid, Spain | 2022–2027):**\n   • Double Degree: Bachelor’s Degree in Business Administration and Management (taught in English) and Bachelor's in Data Science.\n   • Focus areas: Corporate Strategy, Financial Management, Big Data & AI, Exploratory Data Analysis, and Cloud Tools.\n2. **INSEEC Business School (Paris, France | 2024):**\n   • Academic Erasmus Exchange in Business Administration in a multicultural environment.\n3. **International Baccalaureate (IB).**`;
+        }
+        return `**Formación Académica de Daniela Aceña:**\n\n1. **ESIC University (Madrid, 2022–2027):**\n   • **Doble titulación:** Bachelor’s Degree in Business Administration and Management (impartido en inglés) y Grado en Data Science.\n   • Áreas clave: Finanzas y estrategia, análisis exploratorio de datos, Big Data, Inteligencia Artificial y tecnologías cloud.\n2. **INSEEC Business School (París, Francia, 2024):**\n   • Programa de intercambio Erasmus en Business Administration, estudiando en un entorno internacional en inglés.\n3. **Bachillerato Internacional (IB).**`;
+      }
+
+      // 4. Experiencia Profesional / LICUAS
+      if (/\b(experiencia|licuas|pr[aá]ctica|pr[aá]cticas|trabajo|administraci[oó]n|facturaci[oó]n|albaranes|funciones|experience|internship|job|work)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Professional Experience at LICUAS S.A.:**\n\nDaniela completed an internship in the **Administración 360** department (October 2025 – March 2026):\n\n• Document management and interdepartmental communications.\n• Support in billing processes, invoice reviews, delivery notes, and hours tracking.\n• Practical use of corporate management software: **Microsoft AX (ERP), Scan Visio, FACE, and Facturae**.\n\n*Note: She also has an early experience in design/content creation at Vandiere Inc., pending specific function details.*`;
+        }
+        return `**Experiencia Profesional en LICUAS S.A.:**\n\nDaniela participó en el departamento de **Administración 360** (octubre de 2025 – marzo de 2026):\n\n• **Funciones:** Gestión y archivo documental, apoyo en facturación y gestión de facturas, control y revisión de horas y albaranes, y comunicación interdepartamental.\n• **Herramientas empresariales:** ERP **Microsoft AX, Scan Visio, FACE y Facturae**.\n• **Aprendizaje:** Conocimiento directo de los procesos operativos y administrativos internos de una gran empresa.\n\n*(Nota: Su CV también menciona una experiencia en Vandiere Inc. en diseño y creación de contenido, con detalles de funciones a confirmar).*`;
+      }
+
+      // 5. Herramientas Técnicas y Cloud
+      if (/\b(herramienta|herramientas|tecnolog[ií]a|tecnolog[ií]as|skills|power bi|excel|rstudio|azure|aws|cloud|\bia\b|inteligencia artificial|ax|scan visio|face|facturae|tools)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Technical Tools & Skills:**\n\n• **Data Analytics & BI:** Microsoft Excel (Certified), Power BI (Certified), RStudio, Exploratory Data Analysis (EDA), and data visualization.\n• **Cloud & AI:** Microsoft Azure (Certified), AWS (academic labs), Big Data, and AI applied to business decision-making.\n• **Business Management:** Microsoft AX (ERP), Scan Visio, FACE, Facturae, and document workflow management.\n• **Soft Skills:** Adaptability, proactive learning, international mindset, and teamwork.`;
+        }
+        return `**Herramientas Técnicas y Competencias:**\n\n• **Análisis de Datos & BI:** Certificada en **Microsoft Excel** y **Power BI**. Manejo de **RStudio**, análisis exploratorio de datos (EDA), correlaciones y visualizaciones analíticas.\n• **Cloud & IA:** Certificada en **Microsoft Azure**. Formación y prácticas académicas en **AWS**, Big Data e Inteligencia Artificial orientada a la toma de decisiones empresariales.\n• **Gestión Empresarial:** ERP **Microsoft AX, Scan Visio, FACE y Facturae**.\n• **Competencias personales:** Capacidad de adaptación, mentalidad global, proactividad y comunicación bilingüe.`;
+      }
+
+      // 6. Proyectos Destacados
+      if (/\b(proyecto|proyectos|pure beauty|healthy snacks|tfg|disney|branding|projects)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Featured Academic Projects:**\n\n1. **Data Science & Analytics:** Multivariate exploratory analysis and data visualization in RStudio and Excel, analyzing distributions, box plots, and correlation matrices.\n2. **Business Strategy & Entrepreneurship:** Strategic business models including *Pure Beauty* (D2C and retail cosmetics) and *Healthy Snacks* for young students.\n3. **Bachelor's Thesis (TFG) - Disney Experiential Branding:** Qualitative case study on Disney's brand promise using Bernd H. Schmitt’s experiential model and a public perception survey with 89 participants.`;
+        }
+        return `**Proyectos Académicos Destacados:**\n\n1. **Análisis y Visualización de Datos (Data Science):** Análisis exploratorio multivariante en RStudio y Excel, trabajando con matrices de correlación, histogramas y gráficos de dispersión.\n2. **Estrategia y Emprendimiento:** Desarrollo de modelos de negocio como *Pure Beauty* (marca cosmética D2C y retail) y *Healthy Snacks* (alimentación saludable para estudiantes).\n3. **TFG - Disney y Branding Experiencial:** Investigación sobre la promesa de marca de Disney mediante publicidad sensorial y relaciones públicas, aplicando el modelo de Bernd H. Schmitt y una encuesta a 89 personas con escala Likert.`;
+      }
+
+      // 7. Idiomas
+      if (/\b(idioma|idiomas|ingl[eé]s|alem[aá]n|espa[nñ]ol|languages|english|german|c1|b1)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Language Proficiency:**\n\n• **Spanish:** Native speaker.\n• **English:** **C1 Advanced** (Cambridge Certificate, full undergraduate coursework in English, and Erasmus in Paris).\n• **German:** **B1 Intermediate**.`;
+        }
+        return `**Competencias Lingüísticas:**\n\n• **Español:** Nativo.\n• **Inglés:** **C1 Avanzado** (con acreditación Cambridge Certificate y carrera de ADE cursada íntegramente en inglés).\n• **Alemán:** **B1 Intermedio**.\n\nSu formación en inglés y su estancia en París le permiten comunicarse con total soltura en entornos internacionales.`;
+      }
+
+      // 8. Certificaciones
+      if (/\b(certificaci[oó]n|certificaciones|certificados|t[ií]tulos|certifications|cambridge)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Certifications & Complementary Education:**\n\n• **Power BI Certification**\n• **Microsoft Excel Certification**\n• **Microsoft Azure Certification**\n• **Cambridge English Certificate (C1 level)**\n• **International Baccalaureate (IB)**`;
+        }
+        return `**Certificaciones Oficiales:**\n\n• **Certificación en Power BI**\n• **Certificación en Microsoft Excel**\n• **Certificación en Microsoft Azure**\n• **Cambridge Certificate (Nivel C1 acreditado)**\n• **International Baccalaureate (IB)**`;
+      }
+
+      // 9. Disponibilidad
+      if (/\b(disponibilidad|jornada|incorporaci[oó]n|remoto|h[ií]brido|presencial|cu[aá]ndo|availability|schedule)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Professional Availability:**\n\nDaniela is currently an undergraduate student interested in internship and graduate opportunities in business analytics, data analytics, and corporate management.\n\n• **Start date, schedule & work modality:** Pending confirmation depending on company proposals and academic scheduling.\n• **Preferred location:** Madrid, Spain (open to international opportunities).`;
+        }
+        return `**Disponibilidad Profesional:**\n\nDaniela es estudiante universitaria orientada a oportunidades de prácticas y primeras experiencias en análisis de datos, Business Analytics, administración y tecnología.\n\n• **Modalidad, jornada y fecha de incorporación:** Pendientes de confirmar directamente con ella según el calendario académico y la propuesta de la empresa.\n• **Ubicación preferente:** Madrid, con plena apertura a proyectos internacionales.`;
+      }
+
+      // 10. Contacto
+      if (/\b(contact|contacto|contactar|correo|email|tel[eé]fono|m[oó]vil|llamar|phone)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Contact Daniela Aceña:**\n\n• **Email:** [daniela.acena@icloud.com](mailto:daniela.acena@icloud.com)\n• **Phone:** [+34 673 20 75 39](tel:+34673207539)\n• **Location:** Madrid, Spain`;
+        }
+        return `**Datos de Contacto de Daniela Aceña:**\n\n• **Correo electrónico:** [daniela.acena@icloud.com](mailto:daniela.acena@icloud.com)\n• **Teléfono:** [+34 673 20 75 39](tel:+34673207539)\n• **Ubicación:** Madrid, España`;
+      }
+
+      // 11. Respuesta por defecto rigurosa (Regla 8 del perfil)
+      if (isEnglish) {
+        return `That specific information is not stated in Daniela Aceña's current profile. Daniela's core background is in **Business Administration and Data Science at ESIC University** (Power BI, Excel, RStudio, Azure) and international management in Paris.\n\nFor further details, feel free to contact her directly at **daniela.acena@icloud.com** or **+34 673 20 75 39**.`;
+      }
+      return `Ese dato no está especificado en el perfil actual de Daniela Aceña. Su perfil se centra en el **Doble Grado en ADE y Data Science en ESIC University**, herramientas de analítica (**Power BI, Excel, RStudio, Azure**), su experiencia en LICUAS y su trayectoria internacional en París.\n\nSi deseas consultar cualquier detalle adicional, puedes contactar con ella directamente en **daniela.acena@icloud.com** o al **+34 673 20 75 39**.`;
+    }
+
+    /* Enviar mensaje en el chat con tolerancia total a fallos */
+    async function handleSendMessage() {
+      const input = document.getElementById('chatInput');
+      const text = input.value.trim();
+      if (!text || isGenerating) return;
+
+      appendMessage('user', text);
+      input.value = '';
+      autoResizeTextarea(input);
+
+      // Si no hay API Key configurada, respondemos al instante con la base de conocimiento oficial
+      if (!currentApiKey || currentApiKey.trim().length < 10) {
+        showTypingIndicator();
+        setTimeout(() => {
+          removeTypingIndicator();
+          const answer = getKnowledgeBaseResponse(text);
+          appendMessage('bot', answer);
+        }, 400);
+        return;
+      }
+
+      // Si hay API Key configurada, intentamos consultar a la API de Gemini con reintento automático
+      isGenerating = true;
+      document.getElementById('chatSendBtn').disabled = true;
+      showTypingIndicator();
+
+      try {
+        const responseText = await callGeminiApi(text);
+        removeTypingIndicator();
+        appendMessage('bot', responseText);
+
+        conversationHistory.push({ role: "user", parts: [{ text }] });
+        conversationHistory.push({ role: "model", parts: [{ text: responseText }] });
+
+        if (conversationHistory.length > 16) {
+          conversationHistory = conversationHistory.slice(-16);
+        }
+      } catch (err) {
+        removeTypingIndicator();
+        console.warn('[Gemini API Fallback]:', err);
+        // Respaldo inmediato con la base de datos oficial: el asistente NUNCA deja al usuario sin respuesta
+        const fallbackAnswer = getKnowledgeBaseResponse(text);
+        appendMessage('bot', fallbackAnswer);
+      } finally {
+        isGenerating = false;
+        document.getElementById('chatSendBtn').disabled = false;
+        document.getElementById('chatInput').focus();
+      }
+    }
+
+    function sendQuickPrompt(promptText) {
+      const input = document.getElementById('chatInput');
+      input.value = promptText;
+      handleSendMessage();
+    }
+
+    function handleChatKeydown(e) {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        handleSendMessage();
+      }
+    }
+
+    function autoResizeTextarea(textarea) {
+      textarea.style.height = 'auto';
+      textarea.style.height = Math.min(textarea.scrollHeight, 120) + 'px';
+    }
+
+    function appendMessage(sender, text) {
+      const container = document.getElementById('chatMessages');
+      const msgGroup = document.createElement('div');
+      msgGroup.className = `msg-group msg-${sender}`;
+
+      const avatar = document.createElement('div');
+      avatar.className = 'msg-avatar';
+      avatar.textContent = sender === 'user' ? 'Tú' : 'AI';
+
+      const bubble = document.createElement('div');
+      bubble.className = 'msg-bubble';
+
+      if (sender === 'bot') {
+        bubble.innerHTML = formatMarkdown(text);
+      } else {
+        bubble.textContent = text;
+      }
+
+      msgGroup.appendChild(avatar);
+      msgGroup.appendChild(bubble);
+      container.appendChild(msgGroup);
+
+      container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+    }
+
+    function showTypingIndicator() {
+      const container = document.getElementById('chatMessages');
+      const indicator = document.createElement('div');
+      indicator.className = 'msg-group msg-bot';
+      indicator.id = 'activeTypingIndicator';
+      indicator.innerHTML = `
+        <div class="msg-avatar">AI</div>
+        <div class="typing-indicator">
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+        </div>
+      `;
+      container.appendChild(indicator);
+      container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+    }
+
+    function removeTypingIndicator() {
+      const indicator = document.getElementById('activeTypingIndicator');
+      if (indicator) indicator.remove();
+    }
+
+    function clearChatHistory() {
+      conversationHistory = [];
+      const container = document.getElementById('chatMessages');
+      container.innerHTML = `
+        <div class="msg-group msg-bot">
+          <div class="msg-avatar">AI</div>
+          <div class="msg-bubble">
+            <p>¡Conversación reiniciada! Pregúntame lo que desees sobre la trayectoria, proyectos o habilidades de Daniela.</p>
+          </div>
+        </div>
+      `;
+      showToast('Historial del chat reiniciado');
+    }
+
+    /* Formateador Markdown */
+    function formatMarkdown(text) {
+      if (!text) return '';
+      let escaped = text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+
+      escaped = escaped.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      escaped = escaped.replace(/\*(.*?)\*/g, '<em>$1</em>');
+      escaped = escaped.replace(/`([^`]+)`/g, '<code>$1</code>');
+      escaped = escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:var(--primary);font-weight:600;text-decoration:underline;">$1</a>');
+
+      const lines = escaped.split('\n');
+      let html = '';
+      let inList = false;
+
+      for (let line of lines) {
+        line = line.trim();
+        if (line.startsWith('• ') || line.startsWith('- ') || line.startsWith('* ')) {
+          if (!inList) {
+            html += '<ul>';
+            inList = true;
+          }
+          html += `<li>${line.substring(2)}</li>`;
+        } else if (/^\d+\.\s/.test(line)) {
+          if (!inList) {
+            html += '<ol>';
+            inList = true;
+          }
+          html += `<li>${line.replace(/^\d+\.\s/, '')}</li>`;
+        } else {
+          if (inList) {
+            html += inList ? '</ul>' : '</ol>';
+            inList = false;
+          }
+          if (line.length > 0) {
+            html += `<p>${line}</p>`;
+          }
+        }
+      }
+      if (inList) html += '</ul>';
+      return html;
+    }
+
+    /* ==========================================================================
+       5. UTILIDADES (COPIAR, TOAST, MENÚ MÓVIL)
+       ========================================================================== */
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const text = document.getElementById('toastMessage');
+      text.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3200);
+    }
+
+    function copyToClipboard(text, successMessage) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(successMessage || 'Copiado al portapapeles');
+        }).catch(() => fallbackCopy(text, successMessage));
+      } else {
+        fallbackCopy(text, successMessage);
+      }
+    }
+
+    function fallbackCopy(text, successMessage) {
+      const tempInput = document.createElement('input');
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      showToast(successMessage || 'Copiado al portapapeles');
+    }
+
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobileDrawer');
+      drawer.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
