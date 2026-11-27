@@ -1,0 +1,3280 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniela Aceña | CV Interactivo & Asistente IA</title>
+  <meta name="description" content="Currículum interactivo y portfolio profesional de Daniela Aceña Serrano. Estudiante de ADE (en inglés) y Data Science en ESIC University, Business Analytics y Asistente virtual Gemini.">
+  <meta name="keywords" content="Daniela Aceña, CV, Portfolio, Data Science, ADE, ESIC, Business Analytics, Inteligencia Artificial">
+  <meta name="author" content="Daniela Aceña Serrano">
+
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniela Aceña | CV Interactivo & Asistente IA">
+  <meta property="og:description" content="Doble Grado en ADE & Data Science (ESIC University). Explora mis vídeos de presentación y chatea con mi asistente virtual basado en Gemini.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Newsreader (Elegancia editorial cálida) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500;1,6..72,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       ARQUITECTURA DE PALETAS DE COLOR MULTI-TEMA
+       1. Default: Minimalista Apple (Monocromo Obsidiana & Blanco Puro)
+       2. Champagne Luxe (Marfil, Carbón & Oro Suave)
+       3. Nordic Sage (Salvia Botánico & Blanco Nieve)
+       4. Midnight Velvet (Azul Noche Profundo & Platino)
+       ========================================================================== */
+    :root,
+    [data-theme="minimalist"] {
+      /* PALETA MINIMALISTA APPLE (DEFAULT) */
+      --bg-base: #FAFAFA;          /* Blanco porcelana puro */
+      --bg-surface: #FFFFFF;       /* Blanco */
+      --bg-card: #FFFFFF;
+      --bg-card-hover: #FFFFFF;
+      --bg-subtle: #F4F4F5;        /* Gris suave neutro */
+      --bg-sand: #E4E4E7;
+      --bg-oat: #F4F4F5;
+      --bg-accent-soft: #F4F4F5;
+
+      --border-subtle: #E4E4E7;    /* Zinc 200 */
+      --border-medium: #D4D4D8;    /* Zinc 300 */
+      --border-focus: #18181B;     /* Zinc 900 */
+
+      --text-main: #18181B;        /* Negro carbón puro */
+      --text-muted: #52525B;       /* Zinc 600 */
+      --text-dim: #A1A1AA;         /* Zinc 400 */
+
+      --primary: #18181B;          /* Negro obsidiana elegante */
+      --primary-light: #27272A;
+      --primary-dark: #09090B;
+      --primary-contrast: #FFFFFF;
+      --primary-glow: rgba(24, 24, 27, 0.12);
+      --primary-focus-ring: rgba(24, 24, 27, 0.15);
+
+      --amber: #B45309;
+      --amber-bg: #FEF3C7;
+      --sage: #059669;
+      --sage-light: #ECFDF5;
+      --rose: #E11D48;
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-full: 9999px;
+
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+      --shadow-card-hover: 0 14px 30px -4px rgba(0, 0, 0, 0.09), 0 2px 6px rgba(0, 0, 0, 0.02);
+      --shadow-primary: 0 4px 14px rgba(0, 0, 0, 0.18);
+
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-serif: 'Newsreader', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    /* TEMA 2: CHAMPAGNE LUXE (Editorial, Marfil, Carbón & Oro Suave) */
+    [data-theme="champagne"] {
+      --bg-base: #FAF9F6;
+      --bg-surface: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-card-hover: #FFFFFF;
+      --bg-subtle: #F3EFEA;
+      --bg-sand: #EAE3D9;
+      --bg-oat: #F6F2EC;
+      --bg-accent-soft: #F7F3ED;
+
+      --border-subtle: #E8E2D8;
+      --border-medium: #D5CCC0;
+      --border-focus: #9A7B4F;
+
+      --text-main: #1F1D1A;
+      --text-muted: #5C564E;
+      --text-dim: #9E9689;
+
+      --primary: #8C6D3B;
+      --primary-light: #A3824C;
+      --primary-dark: #6E5328;
+      --primary-contrast: #FFFFFF;
+      --primary-glow: rgba(140, 109, 59, 0.2);
+      --primary-focus-ring: rgba(140, 109, 59, 0.18);
+
+      --shadow-primary: 0 6px 20px -3px rgba(140, 109, 59, 0.25);
+      --shadow-card-hover: 0 16px 36px -6px rgba(140, 109, 59, 0.12);
+    }
+
+    /* TEMA 3: NORDIC SAGE (Elegancia botánica, Salvia & Blanco Nieve) */
+    [data-theme="sage"] {
+      --bg-base: #F7FAF8;
+      --bg-surface: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-card-hover: #FFFFFF;
+      --bg-subtle: #EEF4F0;
+      --bg-sand: #DDE7E1;
+      --bg-oat: #F0F6F2;
+      --bg-accent-soft: #EDF5F1;
+
+      --border-subtle: #DCE7E0;
+      --border-medium: #C4D5CB;
+      --border-focus: #285440;
+
+      --text-main: #14231B;
+      --text-muted: #435A4D;
+      --text-dim: #7B9486;
+
+      --primary: #285440;
+      --primary-light: #376C54;
+      --primary-dark: #1A382A;
+      --primary-contrast: #FFFFFF;
+      --primary-glow: rgba(40, 84, 64, 0.2);
+      --primary-focus-ring: rgba(40, 84, 64, 0.18);
+
+      --shadow-primary: 0 6px 20px -3px rgba(40, 84, 64, 0.25);
+      --shadow-card-hover: 0 16px 36px -6px rgba(40, 84, 64, 0.12);
+    }
+
+    /* TEMA 4: MIDNIGHT VELVET (Azul Noche Profundo & Platino) */
+    [data-theme="indigo"] {
+      --bg-base: #F8FAFC;
+      --bg-surface: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-card-hover: #FFFFFF;
+      --bg-subtle: #F1F5F9;
+      --bg-sand: #E2E8F0;
+      --bg-oat: #EEF2F6;
+      --bg-accent-soft: #F1F4F9;
+
+      --border-subtle: #E2E8F0;
+      --border-medium: #CBD5E1;
+      --border-focus: #1E293B;
+
+      --text-main: #0F172A;
+      --text-muted: #334155;
+      --text-dim: #64748B;
+
+      --primary: #1E293B;
+      --primary-light: #334155;
+      --primary-dark: #0F172A;
+      --primary-contrast: #FFFFFF;
+      --primary-glow: rgba(15, 23, 42, 0.2);
+      --primary-focus-ring: rgba(15, 23, 42, 0.18);
+
+      --shadow-primary: 0 6px 20px -3px rgba(15, 23, 42, 0.25);
+      --shadow-card-hover: 0 16px 36px -6px rgba(15, 23, 42, 0.12);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      color-scheme: light;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.65;
+      overflow-x: hidden;
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(circle at 15% 10%, rgba(0, 0, 0, 0.02) 0%, transparent 50%),
+        radial-gradient(circle at 85% 15%, rgba(0, 0, 0, 0.02) 0%, transparent 45%);
+      background-attachment: fixed;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Scrollbar moderna y discreta */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-base);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--border-medium);
+      border-radius: var(--radius-full);
+      border: 2px solid var(--bg-base);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--text-dim);
+    }
+
+    /* ==========================================================================
+       UTILIDADES & COMPONENTES MODERNOS
+       ========================================================================== */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.95rem;
+      border-radius: var(--radius-full);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-medium);
+      color: var(--primary);
+    }
+
+    .badge-sage, .badge-emerald {
+      background: var(--sage-light);
+      border-color: rgba(5, 150, 105, 0.25);
+      color: var(--sage);
+    }
+
+    .badge-amber {
+      background: var(--amber-bg);
+      border-color: rgba(217, 119, 6, 0.28);
+      color: var(--amber);
+    }
+
+    .warm-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), 
+                  box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), 
+                  border-color 0.28s ease;
+    }
+
+    .warm-card:hover {
+      border-color: var(--border-medium);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .editorial-highlight {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .highlight-gradient {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: var(--radius-md);
+      font-size: 0.92rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+      border: none;
+      outline: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #FFFFFF;
+      box-shadow: var(--shadow-primary);
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px -4px var(--primary-glow);
+      color: #FFFFFF;
+    }
+
+    .btn-secondary {
+      background: var(--bg-surface);
+      color: var(--text-main);
+      border: 1px solid var(--border-medium);
+      box-shadow: var(--shadow-sm);
+    }
+    .btn-secondary:hover {
+      background: var(--bg-subtle);
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .btn-oat, .btn-outline {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      font-weight: 600;
+    }
+    .btn-oat:hover, .btn-outline:hover {
+      background: var(--bg-accent-soft);
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .icon {
+      width: 1.15rem;
+      height: 1.15rem;
+      stroke-width: 2;
+      stroke: currentColor;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       HEADER & BARRA DE NAVEGACIÓN
+       ========================================================================== */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(248, 250, 252, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: background 0.3s ease;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+
+    .brand-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1rem;
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px var(--primary-glow);
+    }
+
+    .brand-text h1 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--text-main);
+      letter-spacing: -0.015em;
+    }
+
+    .brand-text span {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: block;
+      font-weight: 500;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .api-status-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.5rem 0.95rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 600;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .api-status-btn:hover {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      border-color: var(--primary);
+    }
+    .api-status-btn.connected {
+      border-color: rgba(5, 150, 105, 0.35);
+      background: var(--sage-light);
+      color: var(--sage);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--amber);
+    }
+    .api-status-btn.connected .status-dot {
+      background: var(--sage);
+      box-shadow: 0 0 8px rgba(5, 150, 105, 0.6);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      color: var(--text-main);
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.5rem;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+    .mobile-drawer.active {
+      display: flex;
+    }
+    .mobile-drawer a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    /* ==========================================================================
+       HERO SECTION & VÍDEO PRINCIPAL VERTICAL EN PORTADA
+       ========================================================================== */
+    .hero {
+      padding: 4.8rem 0 3.5rem;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 4.6vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: var(--text-main);
+    }
+
+    .hero-subtitle {
+      font-size: 1.12rem;
+      color: var(--primary);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .subtitle-dot {
+      color: var(--text-dim);
+    }
+
+    .subtitle-uni {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    .hero-description {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .hero-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    .hero-contact-bar {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      flex-wrap: wrap;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    .contact-item:hover {
+      color: var(--primary);
+    }
+
+    /* Showcase de Vídeo Vertical en Portada */
+    .hero-video-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-video-frame {
+      width: 100%;
+      max-width: 340px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-xl);
+      box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.08), 0 0 0 1px var(--border-subtle);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+    }
+
+    .hero-video-frame:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 25px 50px -12px var(--primary-glow), 0 0 0 1px var(--primary);
+      border-color: var(--primary);
+    }
+
+    .hero-video-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 1.15rem;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .hero-video-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .live-dot-pulse {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10B981;
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      animation: pulseGreen 2s infinite;
+    }
+
+    @keyframes pulseGreen {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    .hero-video-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--bg-subtle);
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .vertical-video-box {
+      width: 100%;
+      background: #0B0F19;
+      position: relative;
+      aspect-ratio: 9 / 16;
+      max-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero-vertical-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background: #0B0F19;
+    }
+
+    .hero-video-footer {
+      padding: 0.95rem 1.15rem;
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+    }
+
+    .hero-video-info h4 {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.25;
+    }
+
+    .hero-video-info p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+    }
+
+    .hero-video-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--bg-accent-soft);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-medium);
+      white-space: nowrap;
+    }
+
+    /* ==========================================================================
+       SELECTOR DE ESTILOS / PALETAS (THEME SWITCHER)
+       ========================================================================== */
+    .theme-selector-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.95rem;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-main);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+      font-family: inherit;
+    }
+    .theme-selector-btn:hover {
+      border-color: var(--primary);
+      transform: translateY(-1px);
+    }
+    .theme-swatch-icon {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: conic-gradient(#18181B 0deg 90deg, #8C6D3B 90deg 180deg, #285440 180deg 270deg, #1E293B 270deg 360deg);
+      display: inline-block;
+      box-shadow: 0 0 0 1px var(--border-subtle);
+    }
+
+    .theme-palette-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 1.2rem;
+    }
+    .theme-palette-card {
+      padding: 1.1rem;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--border-subtle);
+      background: var(--bg-surface);
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.22s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .theme-palette-card:hover {
+      border-color: var(--text-main);
+      transform: translateY(-2px);
+    }
+    .theme-palette-card.active {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+    .palette-colors-row {
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+    }
+    .color-swatch-circle {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    /* ==========================================================================
+       SECCIÓN: TRABAJOS Y PROYECTOS CLAVE
+       ========================================================================== */
+    .works-section {
+      padding: 4.8rem 0;
+      position: relative;
+    }
+
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.8rem;
+    }
+
+    .work-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.26s cubic-bezier(0.16, 1, 0.3, 1), 
+                  box-shadow 0.26s cubic-bezier(0.16, 1, 0.3, 1), 
+                  border-color 0.26s ease;
+    }
+
+    .work-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-focus);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .work-card-highlight {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-subtle) 100%);
+      border: 1px solid var(--border-medium);
+    }
+
+    .work-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .work-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-full);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .work-date {
+      font-size: 0.82rem;
+      color: var(--text-dim);
+      font-weight: 600;
+      font-family: var(--font-mono);
+    }
+
+    .work-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.3;
+      margin-bottom: 0.35rem;
+    }
+
+    .work-subtitle {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 0.9rem;
+    }
+
+    .work-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.3rem;
+      flex-grow: 1;
+    }
+
+    .work-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .work-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--bg-subtle);
+      color: var(--text-muted);
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .work-footer {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .btn-ask-project {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      border: 1px solid var(--border-medium);
+      color: var(--text-main);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-md);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .btn-ask-project:hover {
+      background: var(--primary);
+      color: var(--primary-contrast, #FFFFFF);
+      border-color: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 900px) {
+      .works-grid {
+        grid-template-columns: 1fr;
+      }
+      .work-card-highlight {
+        grid-column: auto;
+      }
+    }
+
+    /* ==========================================================================
+       SECCIONES GENERALES
+       ========================================================================== */
+    section {
+      padding: 4.8rem 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 3.2rem;
+    }
+
+    .section-header .badge {
+      margin-bottom: 0.85rem;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.85rem;
+      color: var(--text-main);
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1.02rem;
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       CHAT INTERACTIVO CONECTADO A GEMINI (TEMA MODERNO & EJECUTIVO)
+       ========================================================================== */
+    .chat-container {
+      max-width: 920px;
+      margin: 0 auto;
+      height: 720px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-xl);
+      box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.08), var(--shadow-card);
+    }
+
+    .chat-header {
+      padding: 1.2rem 1.6rem;
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .chat-bot-info {
+      display: flex;
+      align-items: center;
+      gap: 0.95rem;
+    }
+
+    .chat-avatar {
+      position: relative;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+
+    .chat-online-indicator {
+      position: absolute;
+      bottom: -2px;
+      right: -2px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--sage);
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 0 6px rgba(5, 150, 105, 0.5);
+    }
+
+    .chat-title h3 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      letter-spacing: -0.01em;
+    }
+
+    .chat-title p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .chat-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .chat-btn-action {
+      background: #FFFFFF;
+      border: 1px solid var(--border-medium);
+      color: var(--text-muted);
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius-md);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .chat-btn-action:hover {
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      border-color: var(--primary);
+    }
+
+    /* Banner aviso de API Key */
+    .chat-api-banner {
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.75rem 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.9rem;
+      font-size: 0.84rem;
+      color: var(--text-main);
+    }
+
+    .chat-api-banner.hidden {
+      display: none;
+    }
+
+    .chat-api-banner button {
+      background: var(--primary);
+      color: #FFFFFF;
+      border: none;
+      padding: 0.35rem 0.8rem;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+    .chat-api-banner button:hover {
+      opacity: 0.9;
+    }
+
+    /* Mensajes del chat */
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+      background: #F8FAFC;
+    }
+
+    .msg-group {
+      display: flex;
+      gap: 0.85rem;
+      max-width: 84%;
+      animation: fadeInMsg 0.25s ease-out;
+    }
+
+    @keyframes fadeInMsg {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .msg-user {
+      align-self: flex-end;
+      flex-direction: row-reverse;
+    }
+
+    .msg-bot {
+      align-self: flex-start;
+    }
+
+    .msg-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 0.25rem;
+    }
+
+    .msg-user .msg-avatar {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+
+    .msg-bot .msg-avatar {
+      background: #FFFFFF;
+      color: var(--text-main);
+      border: 1px solid var(--border-medium);
+    }
+
+    .msg-bubble {
+      padding: 1rem 1.3rem;
+      border-radius: var(--radius-lg);
+      font-size: 0.93rem;
+      line-height: 1.65;
+      word-break: break-word;
+    }
+
+    .msg-user .msg-bubble {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #FFFFFF;
+      border-top-right-radius: 4px;
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    .msg-bot .msg-bubble {
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      border-top-left-radius: 4px;
+      box-shadow: 0 3px 10px rgba(15, 23, 42, 0.03);
+    }
+
+    .msg-bot .msg-bubble p {
+      margin-bottom: 0.65rem;
+    }
+    .msg-bot .msg-bubble p:last-child {
+      margin-bottom: 0;
+    }
+    .msg-bot .msg-bubble ul, .msg-bot .msg-bubble ol {
+      margin: 0.5rem 0 0.7rem 1.3rem;
+    }
+    .msg-bot .msg-bubble li {
+      margin-bottom: 0.35rem;
+    }
+    .msg-bot .msg-bubble strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+    .msg-bot .msg-bubble code {
+      font-family: var(--font-mono);
+      background: var(--bg-subtle);
+      padding: 0.18rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.85em;
+      color: var(--primary);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* Indicador animado de respuesta */
+    .typing-indicator {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0.85rem 1.3rem;
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      border-top-left-radius: 4px;
+      width: fit-content;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 3px 8px rgba(15, 23, 42, 0.04);
+    }
+
+    .typing-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--primary);
+      opacity: 0.3;
+      animation: typingPulse 1.4s infinite ease-in-out;
+    }
+    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes typingPulse {
+      0%, 100% { opacity: 0.25; transform: scale(0.85); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+
+    /* Píldoras de preguntas rápidas (Estilo moderno) */
+    .quick-prompts-container {
+      padding: 0.85rem 1.3rem;
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--border-subtle);
+      overflow-x: auto;
+      white-space: nowrap;
+      display: flex;
+      gap: 0.55rem;
+    }
+
+    .quick-prompts-container::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    .quick-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.45rem 0.85rem;
+      border-radius: var(--radius-full);
+      background: #FFFFFF;
+      border: 1px solid var(--border-medium);
+      color: var(--text-main);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .quick-pill:hover {
+      background: var(--bg-accent-soft);
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+
+    /* Input del chat */
+    .chat-input-area {
+      padding: 1rem 1.4rem;
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .chat-input-wrapper {
+      flex: 1;
+      position: relative;
+    }
+
+    .chat-input {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      background: var(--bg-base);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-md);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.93rem;
+      outline: none;
+      resize: none;
+      max-height: 120px;
+      line-height: 1.45;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .chat-input:focus {
+      border-color: var(--primary);
+      background: #FFFFFF;
+      box-shadow: 0 0 0 3px var(--primary-focus-ring);
+    }
+
+    .chat-send-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #FFFFFF;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-primary);
+    }
+    .chat-send-btn:hover {
+      transform: scale(1.04);
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+    }
+    .chat-send-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* ==========================================================================
+       MODAL DE API KEY (MODERNO Y LIMPIO)
+       ========================================================================== */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      animation: fadeInModal 0.2s ease-out;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    @keyframes fadeInModal {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .modal-card {
+      width: 100%;
+      max-width: 530px;
+      background: #FFFFFF;
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+      overflow: hidden;
+      animation: scaleModal 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes scaleModal {
+      from { transform: scale(0.96) translateY(8px); }
+      to { transform: scale(1) translateY(0); }
+    }
+
+    .modal-header {
+      padding: 1.5rem 1.8rem;
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-header h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      letter-spacing: -0.015em;
+    }
+
+    .modal-close-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 0.4rem;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-close-btn:hover {
+      color: var(--text-main);
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    .modal-body {
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    .modal-info-box {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-md);
+      padding: 1.1rem;
+      font-size: 0.86rem;
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .form-label {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .form-label a {
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+    .form-label a:hover {
+      text-decoration: underline;
+    }
+
+    .input-password-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 0.85rem 2.8rem 0.85rem 1rem;
+      background: var(--bg-base);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-md);
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .form-input:focus {
+      border-color: var(--primary);
+      background: #FFFFFF;
+      box-shadow: 0 0 0 3px var(--primary-focus-ring);
+    }
+
+    .toggle-visibility-btn {
+      position: absolute;
+      right: 0.8rem;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .toggle-visibility-btn:hover {
+      color: var(--text-main);
+    }
+
+    .select-model {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      background: var(--bg-base);
+      border: 1px solid var(--border-medium);
+      border-radius: var(--radius-md);
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 500;
+      outline: none;
+      cursor: pointer;
+    }
+    .select-model:focus {
+      border-color: var(--primary);
+      background: #FFFFFF;
+    }
+
+    .modal-footer {
+      padding: 1.2rem 1.8rem;
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    /* ==========================================================================
+       HABILIDADES & PERFIL DETALLADO
+       ========================================================================== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .skill-card {
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+    }
+
+    .skill-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .skill-pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .skill-pill {
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 500;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+    }
+
+    .skill-pill.highlight {
+      background: var(--bg-accent-soft);
+      border-color: var(--primary);
+      color: var(--primary-dark);
+      font-weight: 700;
+      box-shadow: 0 2px 6px var(--primary-glow);
+    }
+
+    /* ==========================================================================
+       CONTACTO & FOOTER
+       ========================================================================== */
+    .contact-section {
+      background: var(--bg-subtle);
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .contact-card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+      max-width: 960px;
+      margin: 0 auto 3rem;
+    }
+
+    .contact-card {
+      padding: 2rem 1.6rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: var(--text-main);
+      background: #FFFFFF;
+      border: 1px solid var(--border-medium);
+      cursor: pointer;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .contact-icon-box {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--bg-accent-soft);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.35rem;
+      border: 1px solid var(--border-medium);
+    }
+
+    .contact-card h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .contact-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      word-break: break-all;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 2.8rem 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      background: var(--bg-base);
+    }
+
+    .site-footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #FFFFFF;
+      border: 1px solid var(--primary);
+      color: var(--text-main);
+      padding: 0.95rem 1.5rem;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+      z-index: 110;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE (MÓVILES Y PANTALLAS PEQUEÑAS)
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .hero-video-frame {
+        max-width: 320px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-card-grid {
+        grid-template-columns: 1fr;
+      }
+      .chat-container {
+        height: 600px;
+      }
+      .hero {
+        padding: 3.2rem 0 2rem;
+      }
+      .hero-title {
+        font-size: 2.3rem;
+      }
+      .msg-group {
+        max-width: 92%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================
+       BARRA DE NAVEGACIÓN SUPERIOR
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#inicio" class="brand">
+        <div class="brand-avatar">DA</div>
+        <div class="brand-text">
+          <h1>Daniela Aceña</h1>
+          <span>Business & Data Science</span>
+        </div>
+      </a>
+
+      <!-- Navegación desktop -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#trabajos">Trabajos & Proyectos</a></li>
+          <li><a href="#chat-ia">Asistente IA</a></li>
+          <li><a href="#perfil">Perfil & Skills</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Selector de estilo, estado API Key y Menú móvil -->
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-selector-btn" onclick="openThemeModal()" title="Personalizar paleta de colores">
+          <span class="theme-swatch-icon"></span>
+          <span>Estilo</span>
+        </button>
+
+        <button id="navApiKeyBtn" class="api-status-btn" onclick="openApiKeyModal()" title="Configurar API Key de Gemini">
+          <span class="status-dot"></span>
+          <span id="navApiKeyText">API Key</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" onclick="toggleMobileMenu()">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú desplegable para móviles -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#inicio" onclick="toggleMobileMenu()">Inicio (Vídeo Pitch)</a>
+      <a href="#trabajos" onclick="toggleMobileMenu()">Trabajos & Proyectos Clave</a>
+      <a href="#chat-ia" onclick="toggleMobileMenu()">Asistente Gemini IA</a>
+      <a href="#perfil" onclick="toggleMobileMenu()">Perfil y Competencias</a>
+      <a href="#contacto" onclick="toggleMobileMenu()">Contacto</a>
+      <div style="padding-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+        <button class="btn btn-secondary" style="width: 100%;" onclick="openThemeModal(); toggleMobileMenu();">
+          🎨 Cambiar Paleta de Colores
+        </button>
+        <button class="btn btn-secondary" style="width: 100%;" onclick="openApiKeyModal(); toggleMobileMenu();">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M21 2l-2 2m-1.5 1.5L12 11l-4-4-6 6 4 4 6-6 5.5-5.5zM15 5l4 4"/></svg>
+          Configurar Gemini API Key
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         HERO SECTION: PORTADA CON VÍDEO VERTICAL PRINCIPAL
+         ======================================================================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div>
+            <span class="badge badge-emerald">
+              <span class="status-dot" style="background:var(--sage);"></span>
+              Disponible para Prácticas & Graduación 2026/2027
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Hola, soy <span class="highlight-gradient">Daniela Aceña</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span>Doble Grado en ADE (inglés) & Data Science</span>
+            <span class="subtitle-dot">•</span>
+            <span class="subtitle-uni">ESIC University</span>
+          </div>
+
+          <p class="hero-description">
+            Conecto visión de negocio y análisis de datos. Formación internacional, experiencia operativa en <strong>LICUAS S.A.</strong> y toma de decisiones basada en Business Intelligence.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#trabajos" class="btn btn-primary">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              Ver Trabajos & Proyectos
+            </a>
+            <a href="#chat-ia" class="btn btn-secondary">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Chatear con mi IA
+            </a>
+            <a href="#contacto" class="btn btn-outline">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Contactar
+            </a>
+          </div>
+
+          <!-- Contact bar rápida -->
+          <div class="hero-contact-bar">
+            <a href="mailto:daniela.acena@icloud.com" class="contact-item">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              daniela.acena@icloud.com
+            </a>
+            <a href="tel:+34673207539" class="contact-item">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +34 673 20 75 39
+            </a>
+            <span class="contact-item">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Madrid, España
+            </span>
+          </div>
+        </div>
+
+        <!-- Vídeo principal en la portada (Vertical) -->
+        <div class="hero-video-column">
+          <div class="hero-video-frame">
+            <div class="hero-video-header">
+              <div class="hero-video-pill">
+                <span class="live-dot-pulse"></span>
+                <span>Vídeo Pitch</span>
+              </div>
+              <button type="button" class="hero-video-tag" id="videoFitToggle" onclick="toggleVideoFit()" title="Alternar entre formato vertical completo y encuadre ajustado" style="cursor: pointer; background: var(--bg-surface); border: 1px solid var(--border-medium);">
+                Vertical 9:16 ⤢
+              </button>
+            </div>
+
+            <div class="vertical-video-box">
+              <video class="hero-vertical-video" controls playsinline preload="metadata">
+                <source src="videos/video principal.mp4" type="video/mp4">
+                <source src="videos/video%20principal.mp4" type="video/mp4">
+                <source src="videos/1. pitch_CV_Daniela Aceña.mp4" type="video/mp4">
+                <source src="videos/1.%20pitch_CV_Daniela%20Ace%C3%B1a.mp4" type="video/mp4">
+                <source src="videos/1. pitch_CV_Daniela Aceña.mp4" type="video/mp4">
+                <source src="videos/1.%20pitch_CV_Daniela%20Acen%CC%83a.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de vídeo MP4.
+              </video>
+            </div>
+
+            <div class="hero-video-footer">
+              <div class="hero-video-info">
+                <h4>Daniela Aceña</h4>
+                <p>Presentación Profesional</p>
+              </div>
+              <span class="hero-video-badge">Vídeo Principal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN: TRABAJOS REALIZADOS & PROYECTOS CLAVE
+         ======================================================================== -->
+    <section class="works-section" id="trabajos">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Trayectoria & Experiencia Práctica</span>
+          <h2>Trabajos y <span class="editorial-highlight">Proyectos Destacados</span></h2>
+          <p>
+            Proyectos reales donde aplico análisis cuantitativo, visión de negocio y rigor operativo.
+          </p>
+        </div>
+
+        <div class="works-grid">
+          <!-- Tarjeta 1: LICUAS S.A. -->
+          <div class="work-card">
+            <div>
+              <div class="work-card-header">
+                <span class="work-badge">Experiencia Corporativa</span>
+                <span class="work-date">Oct 2025 – Mar 2026</span>
+              </div>
+              <h3 class="work-title">LICUAS S.A. — Administración 360 & Control Operativo</h3>
+              <p class="work-subtitle">Gestión integral de procesos, conciliación documental y ERP corporativo</p>
+              <p class="work-desc">
+                Soporte operativo integral en facturación corporativa, control analítico de albaranes y partes de horas de proyectos, y resolución ágil de incidencias con proveedores en un entorno empresarial de alto volumen.
+              </p>
+              <div class="work-tags">
+                <span class="work-tag">ERP Microsoft AX</span>
+                <span class="work-tag">Scan Visio</span>
+                <span class="work-tag">FACE & Facturae</span>
+                <span class="work-tag">Control de Gestión</span>
+              </div>
+            </div>
+            <div class="work-footer">
+              <button type="button" class="btn-ask-project" onclick="askAboutProject('Cuéntame en detalle la experiencia de Daniela en LICUAS S.A. y qué herramientas utilizó.')">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Preguntar a la IA sobre este trabajo
+              </button>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: Business Intelligence & Power BI -->
+          <div class="work-card">
+            <div>
+              <div class="work-card-header">
+                <span class="work-badge">Business Intelligence</span>
+                <span class="work-date">Certificación & Proyectos</span>
+              </div>
+              <h3 class="work-title">Dashboards Ejecutivos & Modelado Relacional</h3>
+              <p class="work-subtitle">Arquitectura de datos y visualización analítica para toma de decisiones</p>
+              <p class="work-desc">
+                Diseño de cuadros de mando interactivos en Microsoft Power BI con modelado relacional en estrella, medidas DAX avanzadas y KPIs de rendimiento comercial y financiero. Complementado con modelado en Excel Avanzado.
+              </p>
+              <div class="work-tags">
+                <span class="work-tag">Power BI (Certificada)</span>
+                <span class="work-tag">DAX Avanzado</span>
+                <span class="work-tag">Excel Financiero</span>
+                <span class="work-tag">KPIs de Negocio</span>
+              </div>
+            </div>
+            <div class="work-footer">
+              <button type="button" class="btn-ask-project" onclick="askAboutProject('¿Qué competencias y certificaciones tiene Daniela en Power BI y Business Intelligence?')">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Preguntar a la IA sobre este trabajo
+              </button>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3: Data Science & Analítica Predictiva -->
+          <div class="work-card">
+            <div>
+              <div class="work-card-header">
+                <span class="work-badge">Data Science & Cloud</span>
+                <span class="work-date">ESIC University</span>
+              </div>
+              <h3 class="work-title">Analítica Cuantitativa & Modelado Estadístico</h3>
+              <p class="work-subtitle">Exploración de datos multivariante, correlaciones y servicios Cloud</p>
+              <p class="work-desc">
+                Análisis exploratorio de datos (EDA) y algoritmos de clustering en RStudio y Azure. Detección de patrones de comportamiento de mercado, interpretación estadística rigurosa y visualizaciones orientadas a negocio.
+              </p>
+              <div class="work-tags">
+                <span class="work-tag">RStudio (ggplot2)</span>
+                <span class="work-tag">Microsoft Azure</span>
+                <span class="work-tag">EDA & Clustering</span>
+                <span class="work-tag">Machine Learning</span>
+              </div>
+            </div>
+            <div class="work-footer">
+              <button type="button" class="btn-ask-project" onclick="askAboutProject('Explícame los proyectos de Data Science, RStudio y Azure que ha realizado Daniela.')">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Preguntar a la IA sobre este trabajo
+              </button>
+            </div>
+          </div>
+
+          <!-- Tarjeta 4: Planes Estratégicos de Negocio -->
+          <div class="work-card">
+            <div>
+              <div class="work-card-header">
+                <span class="work-badge">Estrategia Empresarial</span>
+                <span class="work-date">ESIC & INSEEC París</span>
+              </div>
+              <h3 class="work-title">Planes de Viabilidad Comercial: Pure Beauty & Healthy Snacks</h3>
+              <p class="work-subtitle">Modelización económica, estrategia omnicanal y análisis de mercado</p>
+              <p class="work-desc">
+                Desarrollo de modelos de negocio integrales para marcas D2C y retail. Evaluación de viabilidad económico-financiera, estudio de costes fijos/variables, márgenes operativos y estrategias de penetración de mercado.
+              </p>
+              <div class="work-tags">
+                <span class="work-tag">Plan de Negocio</span>
+                <span class="work-tag">Viabilidad Financiera</span>
+                <span class="work-tag">Estrategia D2C</span>
+                <span class="work-tag">Investigación de Mercado</span>
+              </div>
+            </div>
+            <div class="work-footer">
+              <button type="button" class="btn-ask-project" onclick="askAboutProject('¿En qué consistieron los proyectos estratégicos de Pure Beauty y Healthy Snacks de Daniela?')">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Preguntar a la IA sobre este trabajo
+              </button>
+            </div>
+          </div>
+
+          <!-- Tarjeta 5: TFG Investigación Disney -->
+          <div class="work-card work-card-highlight">
+            <div>
+              <div class="work-card-header">
+                <span class="work-badge">Investigación Empírica</span>
+                <span class="work-date">Trabajo de Fin de Grado (TFG)</span>
+              </div>
+              <h3 class="work-title">TFG: Branding Emocional & Experiencia de Cliente (Disney)</h3>
+              <p class="work-subtitle">"The integration of emotional branding, sensory advertising and experiential PR"</p>
+              <p class="work-desc">
+                Investigación académica y cuantitativa que analiza el viaje desde la promesa de marca hasta la experiencia en parques temáticos. Aplicación del marco teórico de Bernd H. Schmitt combinado con un estudio empírico cuantitativo a 89 usuarios mediante escala Likert.
+              </p>
+              <div class="work-tags">
+                <span class="work-tag">Investigación Cuantitativa</span>
+                <span class="work-tag">Escala Likert (N=89)</span>
+                <span class="work-tag">Customer Experience (CX)</span>
+                <span class="work-tag">Modelo Bernd H. Schmitt</span>
+              </div>
+            </div>
+            <div class="work-footer">
+              <button type="button" class="btn-ask-project" onclick="askAboutProject('Detállame la investigación del TFG de Daniela sobre Disney y el branding experiencial.')">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Preguntar a la IA sobre este trabajo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CHAT INTERACTIVO CONECTADO A GEMINI
+         ======================================================================== -->
+    <section class="chat-section" id="chat-ia">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Inteligencia Artificial Conversacional</span>
+          <h2>Pregunta lo que quieras a mi <span class="editorial-highlight">Asistente Virtual</span></h2>
+          <p>
+            Alimentado en tiempo real con la API de Google Gemini y configurado rigurosamente con los datos oficiales de mi perfil profesional.
+          </p>
+        </div>
+
+        <div class="warm-card chat-container">
+          <!-- Cabecera del chat -->
+          <div class="chat-header">
+            <div class="chat-bot-info">
+              <div class="chat-avatar">
+                AI
+                <div class="chat-online-indicator"></div>
+              </div>
+              <div class="chat-title">
+                <h3>
+                  Daniela Virtual AI
+                  <span id="chatModelBadge" class="badge" style="font-size:0.68rem;padding:0.2rem 0.55rem;background:#FFFFFF;">gemini-3.8-flash</span>
+                </h3>
+                <p>Respuestas verificadas según el CV oficial • Español / English</p>
+              </div>
+            </div>
+
+            <div class="chat-actions">
+              <button class="chat-btn-action" onclick="openApiKeyModal()" title="Configurar o cambiar API Key">
+                <svg class="icon" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M10.85 12.15L19 4M18 5l2 2M15 8l2 2"/></svg>
+                <span class="hide-mobile">API Key</span>
+              </button>
+              <button class="chat-btn-action" onclick="clearChatHistory()" title="Reiniciar conversación">
+                <svg class="icon" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                <span class="hide-mobile">Limpiar</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Banner aviso de API Key no configurada -->
+          <div class="chat-api-banner" id="chatApiBanner">
+            <div style="display:flex;align-items:center;gap:0.6rem;">
+              <svg class="icon" style="color:var(--amber);" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <span>Introduce tu <strong>API Key gratuita de Gemini</strong> para consultar en vivo. (También puedes probar las preguntas rápidas con modo muestra).</span>
+            </div>
+            <button onclick="openApiKeyModal()">Configurar Clave</button>
+          </div>
+
+          <!-- Área de mensajes -->
+          <div class="chat-messages" id="chatMessages">
+            <!-- Mensaje de bienvenida inicial -->
+            <div class="msg-group msg-bot">
+              <div class="msg-avatar">AI</div>
+              <div class="msg-bubble">
+                <p>¡Hola! Soy el <strong>asistente virtual interactivo de Daniela Aceña Serrano</strong>, impulsado por Google Gemini.</p>
+                <p>Estoy configurada para responder a reclutadores y empresas con la máxima fidelidad sobre:</p>
+                <ul>
+                  <li>🎓 Su doble titulación en ADE y Data Science en ESIC University y su intercambio en INSEEC París.</li>
+                  <li>💼 Su experiencia en administración empresarial y control en LICUAS S.A.</li>
+                  <li>📊 Sus proyectos en análisis exploratorio de datos (RStudio, Excel) y estrategia.</li>
+                  <li>🛠️ Sus certificaciones oficiales en Power BI, Excel y Azure.</li>
+                  <li>🌍 Nivel de idiomas (Español nativo, Inglés C1, Alemán B1).</li>
+                </ul>
+                <p style="margin-top:0.4rem;font-size:0.88rem;color:var(--primary);">¿Qué te gustaría saber sobre el perfil de Daniela?</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sugerencias de preguntas rápidas estilo pills -->
+          <div class="quick-prompts-container">
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Por qué debería contratar a Daniela y cuál es su valor diferencial?')">
+              ⭐ ¿Por qué contratar a Daniela?
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Cuál es la formación académica de Daniela?')">
+              🎓 Formación académica
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Cuál fue su experiencia en LICUAS y qué herramientas utilizó?')">
+              💼 Experiencia en LICUAS
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Qué herramientas de Data Science y Business Intelligence domina?')">
+              📊 Herramientas y Data Science
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Cómo abordas la resolución de problemas y la presión de plazos?')">
+              💡 Metodología y resolución de problemas
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Qué proyectos académicos destacados ha realizado?')">
+              🚀 Proyectos destacados
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Qué idiomas habla y qué nivel tiene?')">
+              🌍 Idiomas y certificaciones
+            </button>
+            <button class="quick-pill" onclick="sendQuickPrompt('¿Cuál es su visión sobre la Inteligencia Artificial en las empresas?')">
+              🤖 Visión sobre la IA
+            </button>
+          </div>
+
+          <!-- Input para escribir mensajes -->
+          <div class="chat-input-area">
+            <div class="chat-input-wrapper">
+              <textarea 
+                id="chatInput" 
+                class="chat-input" 
+                rows="1" 
+                placeholder="Haz una pregunta sobre Daniela (ej. ¿Qué certificaciones tiene?)..." 
+                onkeydown="handleChatKeydown(event)"
+                oninput="autoResizeTextarea(this)"></textarea>
+            </div>
+            <button class="chat-send-btn" id="chatSendBtn" onclick="handleSendMessage()" title="Enviar mensaje">
+              <svg class="icon" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN: PERFIL DETALLADO & COMPETENCIAS
+         ======================================================================== -->
+    <section id="perfil">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Skills & Background</span>
+          <h2>Especialización & <span class="editorial-highlight">Competencias Clave</span></h2>
+          <p>
+            Equilibrio estratégico entre visión empresarial, analítica de datos y habilidades interpersonales.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Tarjeta 1: Data & BI -->
+          <div class="warm-card skill-card">
+            <h3>
+              <svg class="icon" style="color:var(--amber);" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              Análisis & Business Intelligence
+            </h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);">Herramientas para exploración, modelado y visualización de conjuntos de datos empresariales:</p>
+            <div class="skill-pill-list">
+              <span class="skill-pill highlight">Power BI (Certificada)</span>
+              <span class="skill-pill highlight">Microsoft Excel (Certificada)</span>
+              <span class="skill-pill">RStudio</span>
+              <span class="skill-pill">Visualización de datos</span>
+              <span class="skill-pill">Análisis exploratorio (EDA)</span>
+              <span class="skill-pill">Estadística aplicada</span>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: Cloud, Tech & IA -->
+          <div class="warm-card skill-card">
+            <h3>
+              <svg class="icon" style="color:var(--primary);" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              Tecnología, Cloud e IA
+            </h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);">Formación académica e interés en computación en la nube y modelos de IA generativa:</p>
+            <div class="skill-pill-list">
+              <span class="skill-pill highlight">Azure (Certificada)</span>
+              <span class="skill-pill">AWS (Prácticas académicas)</span>
+              <span class="skill-pill highlight">Inteligencia Artificial & Big Data</span>
+              <span class="skill-pill">IA aplicada a procesos</span>
+              <span class="skill-pill">Transformación digital</span>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3: Gestión & Idiomas -->
+          <div class="warm-card skill-card">
+            <h3>
+              <svg class="icon" style="color:var(--sage);" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Gestión Empresarial & Idiomas
+            </h3>
+            <p style="font-size:0.9rem;color:var(--text-muted);">Herramientas operativas reales y dominio multilingüe para entornos multiculturales:</p>
+            <div class="skill-pill-list">
+              <span class="skill-pill highlight">Inglés C1 (Cambridge)</span>
+              <span class="skill-pill">Español (Nativo)</span>
+              <span class="skill-pill">Alemán (B1)</span>
+              <span class="skill-pill">ERP Microsoft AX</span>
+              <span class="skill-pill">Scan Visio & FACE</span>
+              <span class="skill-pill">Facturae & Control de gestión</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECCIÓN: CONTACTO DIRECTO CÁLIDO
+         ======================================================================== -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-sage">Conectemos</span>
+          <h2>Información de <span class="editorial-highlight">Contacto</span></h2>
+          <p>
+            ¿Interesado en mi perfil o en coordinar una entrevista profesional? Estaré encantada de conversar.
+          </p>
+        </div>
+
+        <div class="contact-card-grid">
+          <!-- Tarjeta Email -->
+          <div class="warm-card contact-card" onclick="copyToClipboard('daniela.acena@icloud.com', 'Correo electrónico copiado al portapapeles')">
+            <div class="contact-icon-box">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h4>Correo Electrónico</h4>
+            <p>daniela.acena@icloud.com</p>
+            <span style="font-size:0.78rem;color:var(--primary);font-weight:700;margin-top:0.3rem;">Haz clic para copiar</span>
+          </div>
+
+          <!-- Tarjeta Teléfono -->
+          <a href="tel:+34673207539" class="warm-card contact-card">
+            <div class="contact-icon-box" style="color:var(--amber);">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h4>Teléfono Móvil</h4>
+            <p>+34 673 20 75 39</p>
+            <span style="font-size:0.78rem;color:var(--amber);font-weight:700;margin-top:0.3rem;">Llamar directamente</span>
+          </a>
+
+          <!-- Tarjeta Ubicación -->
+          <div class="warm-card contact-card">
+            <div class="contact-icon-box" style="color:var(--sage);">
+              <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h4>Ubicación</h4>
+            <p>Madrid, España</p>
+            <span style="font-size:0.78rem;color:var(--sage);font-weight:700;margin-top:0.3rem;">Apertura a proyectos internacionales</span>
+          </div>
+        </div>
+
+        <div style="text-align:center;">
+          <a href="mailto:daniela.acena@icloud.com" class="btn btn-primary" style="padding:0.95rem 2.4rem;font-size:1.02rem;">
+            <svg class="icon" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Enviar Mensaje por Correo
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Daniela Aceña Serrano. Todos los derechos reservados.</p>
+      <p style="font-size:0.84rem;color:var(--text-dim);">
+        Diseñado con HTML5, CSS y JavaScript integrados • Conectado a Google Gemini API • Desplegable en GitHub Pages
+      </p>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL: CONFIGURACIÓN DE GEMINI API KEY
+       ======================================================================== -->
+  <div class="modal-overlay" id="apiKeyModal" onclick="handleModalOverlayClick(event)">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>
+          <svg class="icon" style="color:var(--primary);" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M10.85 12.15L19 4M18 5l2 2M15 8l2 2"/></svg>
+          Configuración Gemini API Key
+        </h3>
+        <button class="modal-close-btn" onclick="closeApiKeyModal()" aria-label="Cerrar modal">
+          <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-info-box">
+          <p>
+            🔒 <strong>100% Seguro y Privado:</strong> Tu API Key se almacena exclusivamente en tu navegador (<code>localStorage</code>) y se envía de forma directa a la API oficial de Google Gemini. Nunca pasa por servidores intermedios.
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="apiKeyInput">
+            <span>Tu Google Gemini API Key</span>
+            <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">
+              Obtener clave gratis en Google AI Studio ↗
+            </a>
+          </label>
+          <div class="input-password-wrapper">
+            <input 
+              type="password" 
+              id="apiKeyInput" 
+              class="form-input" 
+              placeholder="AIzaSy..." 
+              autocomplete="off" 
+              spellcheck="false"
+            />
+            <button type="button" class="toggle-visibility-btn" id="togglePasswordBtn" onclick="toggleApiKeyVisibility()" title="Mostrar/Ocultar clave">
+              <svg class="icon" id="eyeIcon" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <span style="font-size:0.78rem;color:var(--text-dim);">
+            Empieza habitualmente por <code>AIzaSy...</code>
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modelSelect">
+            <span>Modelo de Gemini</span>
+          </label>
+          <select id="modelSelect" class="select-model">
+            <option value="gemini-3.8-flash" selected>gemini-3.8-flash (Recomendado - Modelo estable)</option>
+            <option value="gemini-1.5-flash">gemini-1.5-flash (Alta estabilidad)</option>
+            <option value="gemini-1.5-pro">gemini-1.5-pro (Mayor profundidad de razonamiento)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="removeApiKey()" style="color:var(--rose);">
+          <svg class="icon" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+          Eliminar clave
+        </button>
+        <div style="display:flex;gap:0.6rem;align-items:center;">
+          <button type="button" class="btn btn-secondary" id="testKeyBtn" onclick="testGeminiConnection()">
+            ⚡ Probar Conexión
+          </button>
+          <button class="btn btn-primary" onclick="saveApiKey()">
+            <svg class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Guardar y Conectar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL DE PERSONALIZACIÓN DE ESTILOS Y PALETA DE COLORES
+       ======================================================================== -->
+  <div class="modal-overlay" id="themeModal" onclick="handleThemeOverlayClick(event)">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a7 7 0 0 0 7 7c0 1.5-.5 2.5-1.5 3.5-.5.5-1 1-1 2 0 1 .5 1.5 1.5 1.5H19a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-4a8 8 0 0 1-8-8 8 8 0 0 1 5-7.46"/></svg>
+          <h3>Personalizar Paleta de Colores</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeThemeModal()" title="Cerrar modal">
+          <svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:0.8rem;">
+          Elige el estilo visual que prefieras. El cambio se aplica en tiempo real y se guarda en tu navegador.
+        </p>
+
+        <div class="theme-palette-grid">
+          <!-- Opción 1: Minimalista Apple -->
+          <div class="theme-palette-card" id="themeCard_minimalist" onclick="setTheme('minimalist')">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="font-size:0.92rem;color:#18181B;">Minimalista Apple</strong>
+              <span class="theme-check" id="themeCheck_minimalist">✓</span>
+            </div>
+            <div class="palette-colors-row">
+              <span class="color-swatch-circle" style="background:#FFFFFF;border:1px solid #D4D4D8;"></span>
+              <span class="color-swatch-circle" style="background:#F4F4F5;"></span>
+              <span class="color-swatch-circle" style="background:#18181B;"></span>
+              <span class="color-swatch-circle" style="background:#52525B;"></span>
+            </div>
+            <span style="font-size:0.76rem;color:#71717A;">Obsidiana & Blanco Puro. Ultra limpio y elegante.</span>
+          </div>
+
+          <!-- Opción 2: Champagne Luxe -->
+          <div class="theme-palette-card" id="themeCard_champagne" onclick="setTheme('champagne')">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="font-size:0.92rem;color:#1F1D1A;">Champagne Luxe</strong>
+              <span class="theme-check" id="themeCheck_champagne"></span>
+            </div>
+            <div class="palette-colors-row">
+              <span class="color-swatch-circle" style="background:#FAF9F6;border:1px solid #D5CCC0;"></span>
+              <span class="color-swatch-circle" style="background:#F3EFEA;"></span>
+              <span class="color-swatch-circle" style="background:#8C6D3B;"></span>
+              <span class="color-swatch-circle" style="background:#1F1D1A;"></span>
+            </div>
+            <span style="font-size:0.76rem;color:#78716C;">Marfil, Carbón & Oro Suave. Estilo editorial.</span>
+          </div>
+
+          <!-- Opción 3: Nordic Sage -->
+          <div class="theme-palette-card" id="themeCard_sage" onclick="setTheme('sage')">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="font-size:0.92rem;color:#14231B;">Nordic Sage</strong>
+              <span class="theme-check" id="themeCheck_sage"></span>
+            </div>
+            <div class="palette-colors-row">
+              <span class="color-swatch-circle" style="background:#F7FAF8;border:1px solid #C4D5CB;"></span>
+              <span class="color-swatch-circle" style="background:#EEF4F0;"></span>
+              <span class="color-swatch-circle" style="background:#285440;"></span>
+              <span class="color-swatch-circle" style="background:#14231B;"></span>
+            </div>
+            <span style="font-size:0.76rem;color:#57534E;">Salvia botánico & Blanco Nieve. Sereno y moderno.</span>
+          </div>
+
+          <!-- Opción 4: Midnight Velvet -->
+          <div class="theme-palette-card" id="themeCard_indigo" onclick="setTheme('indigo')">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <strong style="font-size:0.92rem;color:#0F172A;">Midnight Velvet</strong>
+              <span class="theme-check" id="themeCheck_indigo"></span>
+            </div>
+            <div class="palette-colors-row">
+              <span class="color-swatch-circle" style="background:#F8FAFC;border:1px solid #CBD5E1;"></span>
+              <span class="color-swatch-circle" style="background:#F1F5F9;"></span>
+              <span class="color-swatch-circle" style="background:#1E293B;"></span>
+              <span class="color-swatch-circle" style="background:#0F172A;"></span>
+            </div>
+            <span style="font-size:0.76rem;color:#64748B;">Azul Noche Profundo & Platino. Ejecutivo corporativo.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer" style="justify-content:flex-end;">
+        <button class="btn btn-primary" onclick="closeThemeModal()">Aceptar y Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Elemento Toast emergente -->
+  <div class="toast" id="toast">
+    <svg class="icon" style="color:var(--sage);" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastMessage">Acción completada</span>
+  </div>
+
+  <!-- ========================================================================
+       JAVASCRIPT: INTEGRACIÓN DE GEMINI Y COMPORTAMIENTO INTERACTIVO
+       ======================================================================== -->
+  <script>
+    /* ==========================================================================
+       1. BASE DE CONOCIMIENTO Y SYSTEM INSTRUCTION DE GEMINI
+       ========================================================================== */
+    const DANIELA_CV_SYSTEM_PROMPT = `
+Eres el Embajador de Talento y Asistente Virtual Oficial de Daniela Aceña Serrano para su currículum web interactivo de alto impacto.
+Tu función es atender a directores de talento, reclutadores ejecutivos, líderes de equipo y evaluadores con un nivel de elocuencia, sofisticación, persuasión y distinción sobresaliente, transmitiendo con precisión el extraordinario valor que aporta su perfil.
+
+PERSONALIDAD, TONO Y ESTILO DE COMUNICACIÓN ("HABLAR MUY BIEN Y PERFECTO"):
+1. Expresión Impecable y Ejecutiva: Emplea un lenguaje culto, fluido, articulado y altamente profesional, propio de una firma de consultoría estratégica de primer nivel.
+2. Estructura Dinámica: Organiza tus respuestas con viñetas analíticas, negritas estratégicas y conclusiones nítidas para facilitar una lectura ejecutiva y ágil.
+3. Cercanía, Diplomacia y Persuasión: Muestra un trato empático, constructivo, diplomático y proactivo. Comunica con la seguridad de quien conoce a fondo el perfil y sabe transmitir su impacto real en el negocio.
+4. Bilingüe Fluido: Responde siempre en el idioma en que te escriban (español o inglés) con absoluta corrección léxica, idiomática y gramatical.
+
+BASE DE CONOCIMIENTO INTEGRAL DE DANIELA ACEÑA:
+1. DATOS PERSONALES Y CONTACTO:
+- Nombre completo: Daniela Aceña Serrano (Nombre profesional: Daniela Aceña).
+- Ubicación: Madrid, España (con plena movilidad y mentalidad internacional).
+- Email: daniela.acena@icloud.com
+- Teléfono: +34 673 20 75 39
+- Idiomas: Español (Nativo), Inglés (C1 Avanzado certificado por Cambridge University; grado universitario cursado 100% en inglés y estancia académica en París), Alemán (B1 Intermedio).
+
+2. FORMACIÓN ACADÉMICA DE ÉLITE:
+- ESIC University (Madrid, España, 2022–2027): Doble titulación de alto rendimiento:
+  * Bachelor’s Degree in Business Administration and Management (impartido íntegramente en inglés).
+  * Grado en Data Science (Ciencia de Datos y Business Analytics).
+  * Enfoque formativo: Estrategia corporativa, finanzas, análisis exploratorio de datos (EDA), modelado predictivo, Big Data, Cloud Computing e Inteligencia Artificial aplicada a la optimización de decisiones empresariales.
+- INSEEC Grande École (París, Francia, 2024):
+  * Intercambio académico Erasmus cursando International Business Administration en un entorno multicultural de alta exigencia íntegramente en inglés.
+- Bachillerato Internacional (International Baccalaureate - IB Diploma):
+  * Programa preuniversitario de máxima exigencia orientado al pensamiento crítico, investigación metodológica y rigor intelectual.
+
+3. EXPERIENCIA PROFESIONAL Y RIGOR OPERATIVO:
+- LICUAS S.A. – Departamento de Administración 360 (Octubre 2025 – Marzo 2026):
+  * Responsabilidades y funciones: Gestión y organización documental integral, apoyo operativo en procesos de facturación corporativa, revisión analítica de albaranes, partes de horas de proyectos y coordinación interdepartamental.
+  * Ecosistema tecnológico corporativo: ERP Microsoft Dynamics AX, Scan Visio, FACE y Facturae.
+  * Aporte y aprendizaje: Experiencia real en procesos corporativos complejos, atención al detalle contable-administrativo, resolución de incidencias con proveedores y disciplina operativa en un entorno de alto volumen.
+
+4. HABILIDADES TÉCNICAS Y COMPETENCIAS:
+- Business Intelligence y Analítica Cuantitativa: Certificada en Microsoft Power BI (modelado relacional, DAX, cuadros de mando ejecutivos), Certificada en Microsoft Excel Avanzado (modelización financiera, tablas dinámicas), RStudio (análisis multivariante, correlaciones, visualización estadística ggplot2).
+- Cloud, Big Data e Inteligencia Artificial: Certificada en Microsoft Azure (servicios en la nube, almacenamiento y arquitecturas de datos), prácticas en AWS, conocimientos en modelos de Machine Learning y aplicación estratégica de la IA en procesos de toma de decisiones corporativas.
+- Gestión Empresarial: ERP Microsoft AX, Scan Visio, FACE, Facturae, gestión de compras y facturación.
+- Competencias personales (Soft Skills): Visión analítica transversal, adaptabilidad cultural, resiliencia y templanza bajo presión, resolución metódica de problemas complejos, comunicación ejecutiva bilingüe y liderazgo colaborativo.
+
+5. PROYECTOS DESTACADOS:
+- Data Science & Predictive Analytics: Análisis exploratorio multivariante en RStudio y Excel, clustering, matrices de correlación e interpretación cuantitativa orientada al negocio.
+- Estrategia y Modelos de Negocio: Planes de viabilidad comercial y financiera para "Pure Beauty" (marca cosmética D2C y omnicanal) y "Healthy Snacks" (nutrición funcional para jóvenes y estudiantes).
+- TFG - Disney y Branding Experiencial: Investigación titulada "The integration of emotional branding, sensory advertising and experiential public relations: The journey from brand promise to the theme park experience", integrando el modelo teórico de Bernd H. Schmitt con una investigación empírica a 89 encuestados mediante escala Likert.
+
+6. PROPUESTA DE VALOR (EL PERFIL HÍBRIDO):
+- Daniela es el puente estratégico que las empresas necesitan: combina la visión comercial y directiva de ADE con la precisión cuantitativa y predictiva de Data Science. No solo procesa datos, sino que comprende la cuenta de resultados, el mercado y la estrategia de la organización.
+
+DIRECTRIZ FUNDAMENTAL PARA PREGUNTAS ABIERTAS, SITUACIONALES, HIPOTÉTICAS O NO DOCUMENTADAS:
+¡REGLA DE ORO!: NUNCA contestes "Ese dato no está en el perfil", "No lo sé" o "No tengo esa información". Si el usuario te formula preguntas sobre:
+- Metodología de trabajo, pensamiento analítico o toma de decisiones.
+- Gestión del estrés, situaciones límite o trabajo bajo plazos ajustados.
+- Trabajo en equipo, resolución de discrepancias o liderazgo de proyectos.
+- Visión del futuro de la Inteligencia Artificial, transformación digital o el papel de los datos en la empresa.
+- Por qué contratar a Daniela, cuál es su valor diferencial frente a otros candidatos o qué aportará a la compañía.
+- Preguntas situacionales ("¿Qué harías si un proyecto se retrasa?", "¿Cómo abordarías un error en una base de datos?", "¿Cómo actuarías ante una discrepancia con un proveedor?").
+- Motivación, aspiraciones profesionales, valores o cultura de trabajo:
+
+DEBES CONSTRUIR SIEMPRE UNA RESPUESTA MAGISTRAL, ELOCUENTE Y PERFECTAMENTE ARTICULADA extrapolando a partir de los pilares reales de su currículum:
+1. Explica cómo abordaría esa situación integrando su doble formación (visión de negocio de ADE + método cuantitativo de Data Science).
+2. Ejemplifica con su experiencia real: el rigor operativo y sistemático adquirido en LICUAS S.A., su probada adaptabilidad e independencia en INSEEC París, o el rigor metodológico del Bachillerato Internacional (IB).
+3. Resalta su dominio de herramientas analíticas (Power BI, Excel, RStudio, Azure) como base para la toma de decisiones fundamentada en evidencia objetiva.
+4. Concluye con cortesía e invita cordialmente al interlocutor a profundizar en ese punto concreto mediante una entrevista personal con Daniela, facilitando sus datos de contacto (daniela.acena@icloud.com | +34 673 20 75 39).
+
+REGLAS DE ÉTICA Y VERACIDAD:
+- No inventes empresas ficticias donde no haya trabajado (su experiencia profesional corporativa es LICUAS S.A., su intercambio académico es INSEEC París, y su universidad es ESIC).
+- No afirmes que es una desarrolladora de software con 10 años de experiencia; sitúala con total orgullo como una joven profesional de altísimo potencial, con una sólida formación dual de élite y lista para aportar valor inmediato.
+- Ante preguntas sobre condiciones salariales exactas o detalles privados confidenciales, responde con elegancia diplomática indicando que son puntos abiertos a tratarse de manera personalizada en una entrevista personal.
+`;
+
+    /* ==========================================================================
+       2. GESTIÓN DE ESTADO (API KEY, HISTORIAL Y MODELO)
+       ========================================================================== */
+    const STORAGE_KEY = 'daniela_gemini_api_key';
+    const MODEL_STORAGE_KEY = 'daniela_gemini_model';
+
+    let currentApiKey = localStorage.getItem(STORAGE_KEY) || '';
+    let currentModel = localStorage.getItem(MODEL_STORAGE_KEY);
+    if (!currentModel || currentModel.includes('gemini-2.0')) {
+      currentModel = 'gemini-3.8-flash';
+      localStorage.setItem(MODEL_STORAGE_KEY, currentModel);
+    }
+    let conversationHistory = [];
+    let isGenerating = false;
+
+    /* ==========================================================================
+       GESTIÓN DE PALETAS DE COLOR (THEMES)
+       ========================================================================== */
+    const THEME_STORAGE_KEY = 'daniela_cv_theme_pref';
+    const AVAILABLE_THEMES = ['minimalist', 'champagne', 'sage', 'indigo'];
+
+    function setTheme(themeName) {
+      if (!AVAILABLE_THEMES.includes(themeName)) themeName = 'minimalist';
+      document.documentElement.setAttribute('data-theme', themeName);
+      localStorage.setItem(THEME_STORAGE_KEY, themeName);
+      updateThemeModalUI(themeName);
+      const labels = {
+        'minimalist': 'Minimalista Apple',
+        'champagne': 'Champagne Luxe',
+        'sage': 'Nordic Sage',
+        'indigo': 'Midnight Velvet'
+      };
+      showToast(`Estilo aplicado: ${labels[themeName] || themeName}`);
+    }
+
+    function initTheme() {
+      const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) || 'minimalist';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      updateThemeModalUI(savedTheme);
+    }
+
+    function updateThemeModalUI(activeTheme) {
+      AVAILABLE_THEMES.forEach(t => {
+        const card = document.getElementById(`themeCard_${t}`);
+        const check = document.getElementById(`themeCheck_${t}`);
+        if (card) {
+          if (t === activeTheme) {
+            card.classList.add('active');
+          } else {
+            card.classList.remove('active');
+          }
+        }
+        if (check) {
+          check.textContent = (t === activeTheme) ? '✓' : '';
+        }
+      });
+    }
+
+    function openThemeModal() {
+      const modal = document.getElementById('themeModal');
+      if (modal) {
+        const current = document.documentElement.getAttribute('data-theme') || 'minimalist';
+        updateThemeModalUI(current);
+        modal.classList.add('active');
+      }
+    }
+
+    function closeThemeModal() {
+      const modal = document.getElementById('themeModal');
+      if (modal) modal.classList.remove('active');
+    }
+
+    function handleThemeOverlayClick(e) {
+      if (e.target.id === 'themeModal') {
+        closeThemeModal();
+      }
+    }
+
+    function askAboutProject(promptText) {
+      const chatSection = document.getElementById('chat-ia');
+      if (chatSection) {
+        chatSection.scrollIntoView({ behavior: 'smooth' });
+      }
+      setTimeout(() => {
+        sendQuickPrompt(promptText);
+      }, 450);
+    }
+
+    // Inicialización al cargar el DOM
+    document.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      initApiStatus();
+      initModelSelector();
+      initVideoSync();
+    });
+
+    // Pausar los otros vídeos si existiesen y controlar ajuste
+    function initVideoSync() {
+      const allVideos = document.querySelectorAll('video');
+      allVideos.forEach(video => {
+        video.addEventListener('play', () => {
+          allVideos.forEach(otherVideo => {
+            if (otherVideo !== video && !otherVideo.paused) {
+              otherVideo.pause();
+            }
+          });
+        });
+      });
+    }
+
+    function toggleVideoFit() {
+      const vid = document.querySelector('.hero-vertical-video');
+      const btn = document.getElementById('videoFitToggle');
+      if (vid) {
+        if (vid.style.objectFit === 'contain') {
+          vid.style.objectFit = 'cover';
+          if (btn) btn.innerHTML = 'Vertical 9:16 ⤢';
+        } else {
+          vid.style.objectFit = 'contain';
+          if (btn) btn.innerHTML = 'Encuadre Ajustado ⊡';
+        }
+      }
+    }
+
+    function initApiStatus() {
+      const navBtn = document.getElementById('navApiKeyBtn');
+      const navText = document.getElementById('navApiKeyText');
+      const banner = document.getElementById('chatApiBanner');
+      const modelBadge = document.getElementById('chatModelBadge');
+
+      if (modelBadge) modelBadge.textContent = currentModel;
+
+      if (currentApiKey && currentApiKey.trim().length > 10) {
+        navBtn.classList.add('connected');
+        navText.textContent = 'API Key Conectada';
+        banner.classList.add('hidden');
+      } else {
+        navBtn.classList.remove('connected');
+        navText.textContent = 'Configurar API Key';
+        banner.classList.remove('hidden');
+      }
+    }
+
+    function initModelSelector() {
+      const select = document.getElementById('modelSelect');
+      if (select) {
+        select.value = currentModel;
+        select.addEventListener('change', (e) => {
+          currentModel = e.target.value;
+          localStorage.setItem(MODEL_STORAGE_KEY, currentModel);
+          const badge = document.getElementById('chatModelBadge');
+          if (badge) badge.textContent = currentModel;
+          showToast(`Modelo cambiado a ${currentModel}`);
+        });
+      }
+    }
+
+    /* ==========================================================================
+       3. MODAL Y CONTROL DE API KEY
+       ========================================================================== */
+    function openApiKeyModal() {
+      const modal = document.getElementById('apiKeyModal');
+      const input = document.getElementById('apiKeyInput');
+      input.value = currentApiKey;
+      modal.classList.add('active');
+      setTimeout(() => input.focus(), 150);
+    }
+
+    function closeApiKeyModal() {
+      const modal = document.getElementById('apiKeyModal');
+      modal.classList.remove('active');
+    }
+
+    function handleModalOverlayClick(e) {
+      if (e.target.id === 'apiKeyModal') {
+        closeApiKeyModal();
+      }
+    }
+
+    function toggleApiKeyVisibility() {
+      const input = document.getElementById('apiKeyInput');
+      const icon = document.getElementById('eyeIcon');
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.innerHTML = '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/>';
+      } else {
+        input.type = 'password';
+        icon.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>';
+      }
+    }
+
+    function saveApiKey() {
+      const input = document.getElementById('apiKeyInput');
+      const val = input.value.trim();
+      
+      if (!val) {
+        showToast('Por favor introduce una API Key válida');
+        return;
+      }
+
+      currentApiKey = val;
+      localStorage.setItem(STORAGE_KEY, currentApiKey);
+      initApiStatus();
+      closeApiKeyModal();
+      showToast('API Key de Gemini configurada con éxito ✅');
+    }
+
+    function removeApiKey() {
+      currentApiKey = '';
+      localStorage.removeItem(STORAGE_KEY);
+      document.getElementById('apiKeyInput').value = '';
+      initApiStatus();
+      closeApiKeyModal();
+      showToast('API Key eliminada');
+    }
+
+    /* ==========================================================================
+       4. CLIENTE API DE GEMINI Y BASE DE CONOCIMIENTO RESILIENTE
+       ========================================================================== */
+    function extractTextFromCandidate(candidate) {
+      if (!candidate || !candidate.content || !candidate.content.parts) return '';
+      const parts = candidate.content.parts;
+      // 1. Filtrar partes que no sean de pensamiento (thought / reasoning)
+      const textParts = parts.filter(p => !p.thought && p.text);
+      if (textParts.length > 0) {
+        return textParts.map(p => p.text).join('\n').trim();
+      }
+      // 2. Si no hay flag 'thought', buscar de atrás hacia adelante partes con texto
+      for (let i = parts.length - 1; i >= 0; i--) {
+        if (parts[i].text && !parts[i].thought) {
+          return parts[i].text.trim();
+        }
+      }
+      return parts.map(p => p.text || '').join('\n').trim();
+    }
+
+    async function callGeminiApi(promptText) {
+      // Lista de modelos ordenados por prioridad para reintento automático si uno no está disponible
+      const modelsToTry = [
+        currentModel,
+        'gemini-3.8-flash',
+        'gemini-2.5-flash',
+        'gemini-1.5-flash',
+        'gemini-2.0-flash',
+        'gemini-1.5-pro'
+      ].filter((v, i, a) => v && a.indexOf(v) === i);
+
+      const cleanKey = currentApiKey.trim();
+      let lastError = null;
+
+      for (const modelName of modelsToTry) {
+        try {
+          const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${encodeURIComponent(cleanKey)}`;
+
+          const contentsPayload = [
+            ...conversationHistory,
+            { role: "user", parts: [{ text: promptText }] }
+          ];
+
+          const requestBody = {
+            systemInstruction: {
+              parts: [{ text: DANIELA_CV_SYSTEM_PROMPT }]
+            },
+            contents: contentsPayload,
+            generationConfig: {
+              temperature: 0.4,
+              maxOutputTokens: 1200
+            }
+          };
+
+          const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestBody)
+          });
+
+          if (!response.ok) {
+            const errorData = await response.json().catch(() => ({}));
+            const errMessage = errorData.error?.message || `HTTP ${response.status}`;
+
+            // Si el modelo da error (404, 400, etc.), registrar y continuar probando los demás modelos
+            console.warn(`[Gemini] Modelo ${modelName} devolvió error (${errMessage}). Probando siguiente modelo...`);
+            lastError = new Error(errMessage);
+
+            // Si hay error 400 y tenemos historial, reintentar turno único
+            if (response.status === 400 && conversationHistory.length > 0) {
+              const singleTurnBody = {
+                systemInstruction: { parts: [{ text: DANIELA_CV_SYSTEM_PROMPT }] },
+                contents: [{ role: "user", parts: [{ text: promptText }] }],
+                generationConfig: { temperature: 0.4, maxOutputTokens: 1200 }
+              };
+              const retryRes = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(singleTurnBody)
+              });
+              if (retryRes.ok) {
+                const data = await retryRes.json();
+                const text = extractTextFromCandidate(data.candidates?.[0]);
+                if (text) {
+                  if (modelName !== currentModel) {
+                    currentModel = modelName;
+                    localStorage.setItem(MODEL_STORAGE_KEY, currentModel);
+                    const badge = document.getElementById('chatModelBadge');
+                    if (badge) badge.textContent = currentModel;
+                  }
+                  return text;
+                }
+              }
+            }
+
+            continue;
+          }
+
+          const data = await response.json();
+          const generatedText = extractTextFromCandidate(data.candidates?.[0]);
+
+          if (generatedText) {
+            if (modelName !== currentModel) {
+              currentModel = modelName;
+              localStorage.setItem(MODEL_STORAGE_KEY, currentModel);
+              const badge = document.getElementById('chatModelBadge');
+              if (badge) badge.textContent = currentModel;
+            }
+            return generatedText;
+          } else {
+            console.warn(`[Gemini] Sin texto en ${modelName}, probando siguiente modelo...`);
+            continue;
+          }
+        } catch (err) {
+          lastError = err;
+          console.warn(`[Gemini] Error en fetch con ${modelName}:`, err.message);
+          continue;
+        }
+      }
+
+      throw lastError || new Error('No se pudo establecer conexión con los modelos de Gemini.');
+    }
+
+    /* Probar conexión de la API Key en vivo */
+    async function testGeminiConnection() {
+      const input = document.getElementById('apiKeyInput');
+      const key = input.value.trim();
+      const testBtn = document.getElementById('testKeyBtn');
+      if (!key) {
+        showToast('Por favor introduce primero tu API Key');
+        return;
+      }
+      if (testBtn) {
+        testBtn.disabled = true;
+        testBtn.textContent = 'Probando...';
+      }
+
+      const testModels = [currentModel, 'gemini-3.8-flash', 'gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-2.0-flash'];
+      let workingModel = null;
+      let lastErrMsg = '';
+
+      for (const m of testModels) {
+        try {
+          const url = `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent?key=${encodeURIComponent(key)}`;
+          const res = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ contents: [{ parts: [{ text: "ping" }] }] })
+          });
+          if (res.ok) {
+            workingModel = m;
+            break;
+          } else {
+            const errData = await res.json().catch(() => ({}));
+            lastErrMsg = errData.error?.message || `HTTP ${res.status}`;
+          }
+        } catch (e) {
+          lastErrMsg = e.message;
+        }
+      }
+
+      if (testBtn) {
+        testBtn.disabled = false;
+        testBtn.textContent = '⚡ Probar Conexión';
+      }
+
+      if (workingModel) {
+        currentModel = workingModel;
+        localStorage.setItem(MODEL_STORAGE_KEY, currentModel);
+        currentApiKey = key;
+        localStorage.setItem(STORAGE_KEY, currentApiKey);
+        initApiStatus();
+        showToast(`✅ ¡Conectado con éxito a ${workingModel}!`);
+      } else {
+        showToast('⚠️ Clave no válida o sin cuota');
+        alert(`Aviso de Google Gemini:\n\n${lastErrMsg}\n\nNota: Tu asistente virtual responderá de todas formas utilizando la base de conocimiento oficial verificada de Daniela.`);
+      }
+    }
+
+    /* Base de conocimiento oficial verificada (Funciona siempre, con o sin API Key) */
+    function getKnowledgeBaseResponse(query) {
+      const q = query.toLowerCase().trim();
+      const isEnglish = /\b(tell|what|where|who|how|why|education|experience|languages|skills|projects|available|contact|degree|studies|university|hire|deadline|pressure|teamwork|leadership|future|ai|tools|strengths|about)\b/i.test(q);
+
+      // 1. Saludos y bienvenida
+      if (/\b(hola|buenas|buenos d[ií]as|buenas tardes|buenas noches|hello|hi|hey|qu[eé] tal)\b/i.test(q)) {
+        if (isEnglish) {
+          return `Hello! I am the **official talent ambassador and virtual assistant of Daniela Aceña Serrano**.\n\nI am here to assist recruiters, leaders, and evaluators with any questions regarding Daniela's background:\n• **Elite Dual Degree:** Business Administration & Management (taught 100% in English) and Data Science at **ESIC University** (2022–2027).\n• **Corporate Experience:** Comprehensive operational management (Administración 360) at **LICUAS S.A.** with enterprise ERP.\n• **International Background:** Erasmus exchange at **INSEEC Grande École in Paris** (2024).\n• **Technical Mastery:** Power BI (Certified), Microsoft Excel (Certified), RStudio, and Microsoft Azure (Certified).\n• **Languages:** Native Spanish, C1 Advanced English, B1 German.\n\nHow can I assist you with her profile today?`;
+        }
+        return `¡Hola! Soy el **embajador de talento y asistente virtual oficial de Daniela Aceña Serrano**.\n\nEstoy a tu entera disposición para resolver cualquier duda sobre su perfil profesional:\n• **Doble Grado de Alto Rendimiento:** ADE (cursado 100% en inglés) y Data Science en **ESIC University** (2022–2027).\n• **Experiencia Corporativa Real:** Departamento de Administración 360 en **LICUAS S.A.** con ERP corporativo.\n• **Inmersión Internacional:** Intercambio académico Erasmus en **INSEEC Grande École en París** (2024).\n• **Dominio Analítico:** Certificada en **Power BI**, **Excel Avanzado** y **Microsoft Azure**, además de **RStudio**.\n• **Idiomas:** Español nativo, Inglés C1 acreditado y Alemán B1.\n\n¿Qué aspecto de su perfil te gustaría explorar?`;
+      }
+
+      // 2. Experiencia Internacional (INSEEC París / Erasmus) - Prioridad específica
+      if (/\b(par[ií]s|inseec|erasmus|francia|paris|intercambio|abroad)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**International Experience at INSEEC Business School (Paris, 2024):**\n\nDaniela completed an academic exchange in Paris, France, at the prestigious **INSEEC Grande École**:\n\n• **Curriculum 100% in English:** Specialization in International Business Administration and global marketing strategy.\n• **Multicultural Collaboration:** Daily teamwork on corporate projects alongside students and professors representing over 15 nationalities.\n• **Professional Growth:** Honed intercultural agility, autonomous problem solving, and multilingual business negotiation.`;
+        }
+        return `**Experiencia Académica Internacional en INSEEC Business School (París, 2024):**\n\nDaniela realizó su programa de intercambio Erasmus en **INSEEC Grande École** en París, Francia, una de las escuelas de negocios más prestigiosas de Europa:\n\n• **Formación 100% en Inglés:** Especialización en International Business Administration, estrategia global y gestión corporativa multicultural.\n• **Inmersión Internacional:** Colaboración continua en equipos multidisciplinares con estudiantes de más de 15 países distintos.\n• **Impacto Profesional:** Fortalecimiento de la adaptabilidad a nuevos entornos, autonomía en la toma de decisiones y soltura en negociación profesional en inglés.`;
+      }
+
+      // 3. Experiencia Profesional en LICUAS S.A.
+      if (/\b(licuas|administraci[oó]n 360|ax|scan visio|face|facturae)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Corporate Experience at LICUAS S.A. (Administración 360):**\n\nDaniela completed an internship in the **Corporate Administration 360** department (October 2025 – March 2026):\n\n• **Core Responsibilities:**\n  - Comprehensive management of corporate documentation and interdepartmental communications.\n  - Verification, reconciliation, and audit of supplier and client invoicing cycles.\n  - Systematic tracking and control of delivery notes, billable project hours, and procurement records.\n• **Enterprise Systems:**\n  - **Microsoft Dynamics AX (ERP):** Enterprise resource planning and financial tracking.\n  - **Scan Visio:** Digital document processing and validation.\n  - **FACE & Facturae:** Official electronic invoicing platforms for public and private sector contracts.\n• **Key Takeaways:** Hands-on experience with high-volume operational workflows, data precision, and internal audit compliance.`;
+        }
+        return `**Experiencia Profesional en LICUAS S.A. (Departamento Administración 360):**\n\nDaniela desempeñó funciones en el departamento de **Administración 360** de la compañía **LICUAS S.A.** (octubre 2025 – marzo 2026):\n\n• **Responsabilidades y Funciones Principales:**\n  - Gestión y custodia documental integral, garantizando la trazabilidad entre departamentos operativos y financieros.\n  - Apoyo y supervisión en procesos de facturación, revisión analítica de facturas de proveedores y clientes.\n  - Control y conciliación sistemática de albaranes de entrega, partes de trabajo y registro de horas de proyectos.\n• **Ecosistema Tecnológico Corporativo:**\n  - **ERP Microsoft Dynamics AX:** Gestión integral de recursos empresariales y contabilidad corporativa.\n  - **Scan Visio:** Digitalización, validación y archivo automatizado de documentos.\n  - **FACE y Facturae:** Plataformas oficiales de facturación electrónica para entidades públicas y privadas.\n• **Competencias Adquiridas:** Rigor en el tratamiento de datos financieros reales, madurez organizativa ante auditorías internas y comunicación efectiva interdepartamental.`;
+      }
+
+      // 4. Por qué contratar a Daniela / Propuesta de Valor / Valor Diferencial / Fortalezas
+      if (/(por qu[eé].*(contrat|eleg|fich|incorpor)|valor diferencial|propuesta de valor|puntos fuertes|fortalezas|why hire|value proposition|diferencial|qui[eé]n eres|qui[eé]n es|pres[eé]ntate|presentaci[oó]n|h[aá]blame de ti|sobre ti|tell me about yourself|who are you|pitch|resumen)/i.test(q)) {
+        if (isEnglish) {
+          return `**Why Hire Daniela Aceña? Value Proposition & Core Strengths:**\n\nDaniela represents the most sought-after profile in today's digital landscape: the **strategic bridge between business operations and advanced data intelligence**.\n\n1. **The Power of a Dual Mindset:**\n   Pursuing a Double Degree in **Business Administration (taught in English)** and **Data Science** at ESIC University, she understands the language of financial ROI, corporate strategy, and client needs just as deeply as predictive algorithms, statistical models, and cloud infrastructure.\n\n2. **Immediate Operational Readiness:**\n   Unlike purely theoretical profiles, her tenure in Corporate Administration 360 at **LICUAS S.A.** provided hands-on mastery of enterprise workflows, invoicing audits, delivery logistics, and ERP systems (Microsoft AX, Scan Visio, FACE).\n\n3. **Global Fluency & Adaptability:**\n   Her academic experience at **INSEEC Paris**, her International Baccalaureate (IB) background, and her C1 English enable her to integrate seamlessly into diverse, high-performing international teams.\n\n4. **Proven Technical Toolkit:**\n   Certified in **Power BI**, **Microsoft Excel**, and **Microsoft Azure**, she doesn't just collect data—she crafts executive dashboards and models that drive profitable corporate decisions.\n\n*In summary: Daniela brings analytical rigor, operational discipline, and business foresight from day one.*`;
+        }
+        return `**¿Por qué incorporar a Daniela Aceña a tu equipo? Propuesta de Valor y Diferencial:**\n\nDaniela representa el perfil profesional más demandado y difícil de encontrar en el mercado corporativo actual: **el puente estratégico entre la toma de decisiones de negocio y el rigor analítico de la ciencia de datos**.\n\n1. **Sinergia Híbrida Única (Negocio + Datos):**\n   Su Doble Grado en **ADE (cursado 100% en inglés)** y **Data Science** en ESIC University le permite comprender tanto los estados financieros, la estrategia corporativa y los KPIs de rentabilidad, como los algoritmos predictivos, el modelado estadístico y los servicios en la nube.\n\n2. **Madurez Operativa en Entornos Corporativos Reales:**\n   A diferencia de perfiles puramente teóricos, en **LICUAS S.A.** gestionó flujos reales de facturación, control de horas, albaranes e incidencias utilizando herramientas empresariales de primer nivel (ERP Microsoft AX, Scan Visio, FACE y Facturae).\n\n3. **Adaptabilidad Internacional y Pensamiento Crítico:**\n   Su estancia Erasmus en **INSEEC Grande École en París**, su formación en el **Bachillerato Internacional (IB)** y su dominio de idiomas (Inglés C1 acreditado, Alemán B1) le permiten liderar y colaborar con total soltura en entornos multiculturales complejos.\n\n4. **Solvencia Técnica Certificada:**\n   Certificada en **Microsoft Power BI**, **Excel Avanzado** y **Microsoft Azure**, traduce volúmenes masivos de datos en cuadros de mando intuitivos y accionables para la alta dirección.\n\n*En definitiva: aporta visión global de negocio, precisión analítica y capacidad de ejecución desde el primer día.*`;
+      }
+
+      // 5. Gestión de la Presión, Plazos y Resiliencia
+      if (/\b(presi[oó]n|estr[eé]s|plazos|deadlines|resiliencia|pressure|stress|dead lines|bajo presi[oó]n|situaciones cr[ií]ticas)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Performance Under Pressure & Resilience:**\n\nDaniela thrives in demanding environments by combining systematic organization with emotional composure:\n\n• **Proven Dual-Track Discipline:**\n  Simultaneously pursuing two rigorous undergraduate degrees (ADE in English and Data Science at ESIC) while achieving professional certifications and international experience has built an exceptional capacity for task prioritization, time management, and mental stamina.\n• **Corporate Deadlines at LICUAS S.A.:**\n  Managing monthly closing billing cycles, supplier invoice tracking, and delivery audits in high-volume administration taught her to remain precise and detail-oriented even when deadlines are tight.\n• **Structured Prioritization:**\n  When faced with competing urgent tasks, she deconstructs the challenge, categorizes work by business impact, communicates transparently with team leads, and executes methodically.`;
+        }
+        return `**Gestión de la Presión, Plazos Ajustados y Resiliencia:**\n\nDaniela gestiona la exigencia y los plazos ajustados mediante una sólida disciplina organizativa y serenidad analítica:\n\n• **Disciplina demostrada en alta exigencia académica:**\n  Cursar simultáneamente un Doble Grado de máxima intensidad (ADE 100% en inglés y Data Science en ESIC), compaginándolo con certificaciones profesionales y estancias internacionales, ha forjado en ella una capacidad de organización, resiliencia y gestión del tiempo sobresaliente.\n• **Rigor en cierres y auditorías en LICUAS S.A.:**\n  En el departamento de Administración 360, gestionó procesos de facturación, revisión de albaranes e incidencias con plazos de cierre mensuales inaplazables, manteniendo siempre el foco en el detalle y la precisión numérica.\n• **Enfoque de priorización por impacto:**\n  Ante situaciones de estrés o múltiples entregas simultáneas, desglosa los proyectos en hitos críticos, clasifica por impacto directo en el negocio y mantiene una comunicación fluida y proactiva con los responsables del equipo.`;
+      }
+
+      // 6. Trabajo en Equipo, Liderazgo Colaborativo y Comunicación
+      if (/\b(trabajo en equipo|liderazgo|liderar|equipo|colaboraci[oó]n|desacuerdo|compa[nñ]eros|conflicto|comunicaci[oó]n interpersonal|team work|teamwork|leadership|relaci[oó]n con compa[nñ]eros)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Teamwork, Collaborative Leadership & Communication:**\n\nDaniela understands collaboration as an active catalyst for organizational excellence:\n\n• **The Translator Role:**\n  Her dual background allows her to bridge the communication gap between technical data scientists and business directors, facilitating alignment and productive dialogue.\n• **Cross-Cultural Teamwork in Paris:**\n  During her Erasmus exchange at INSEEC Business School in Paris, she worked on multidisciplinary team projects alongside peers from various continents, honing active listening and negotiation in international English.\n• **Data-Driven Consensus:**\n  When differing opinions arise, she facilitates objective resolution by grounding decisions in validated data and measurable business goals rather than subjective speculation.`;
+        }
+        return `**Trabajo en Equipo, Liderazgo Colaborativo y Comunicación:**\n\nDaniela concibe el trabajo en equipo como un catalizador de talento donde la empatía y la claridad comunicativa marcan la diferencia:\n\n• **El rol de 'Traductora' Interdisciplinar:**\n  Su formación mixta le otorga una habilidad natural para actuar como puente comunicativo entre los perfiles técnicos (ingenieros y científicos de datos) y las áreas directivas y de negocio (marketing, operaciones, finanzas), traduciendo tecnicismos en valor tangible.\n• **Colaboración Multicultural en París:**\n  Durante su estancia académica en INSEEC París, lideró y formó parte de grupos de trabajo con estudiantes de múltiples nacionalidades, perfeccionando la escucha activa, el respeto a puntos de vista diversos y la negociación en inglés.\n• **Resolución de discrepancias con base en evidencia:**\n  Frente a visiones contrapuestas, promueve el análisis objetivo fundamentado en datos y métricas compartidas, fomentando un clima de cooperación constructivo y orientado a soluciones.`;
+      }
+
+      // 7. Visión sobre Inteligencia Artificial y Ciencia de Datos en el Negocio
+      if (/(visi[oó]n.*ia|futuro.*ia|impacto.*ia|inteligencia artificial|data driven|ai vision)/i.test(q)) {
+        if (isEnglish) {
+          return `**Daniela's Vision on Artificial Intelligence & Data in Business:**\n\n• **AI as an Amplification Engine, Not a Panacea:**\n  Daniela views AI and Machine Learning not as mere buzzwords, but as strategic levers to automate repetitive workflows, predict customer behavior, and optimize resource allocation.\n• **The Importance of Clean Foundations:**\n  No advanced algorithm can compensate for poor data quality or misaligned corporate objectives. She advocates for robust data governance, clear KPIs, and exploratory data analysis before implementing complex predictive architectures.\n• **Human-Centric & Ethical Perspective:**\n  Her TFG on Disney experiential branding and her business background reinforce her belief that algorithmic efficiency must always serve human customer experience and long-term brand equity.`;
+        }
+        return `**Visión de Daniela sobre la Inteligencia Artificial y los Datos en el Negocio:**\n\n• **La IA como palanca estratégica y no como fin en sí misma:**\n  Daniela concibe la Inteligencia Artificial y el Big Data no como modas tecnológicas, sino como herramientas esenciales para optimizar costes, anticipar tendencias de mercado y personalizar la propuesta de valor al cliente con precisión milimétrica.\n• **El valor crítico del dato de calidad y la gobernanza:**\n  Sostiene que ningún algoritmo, por avanzado que sea, aporta valor si no se parte de datos fiables, una adecuada gobernanza y una formulación nítida del problema de negocio que se desea resolver.\n• **Complementariedad Humano-Algoritmo:**\n  Su investigación en su TFG sobre branding experiencial y su formación en ADE le dan una visión integral: la automatización y la IA deben potenciar la creatividad humana y la experiencia del cliente, garantizando siempre la ética y la transparencia en las decisiones corporativas.`;
+      }
+
+      // 8. Metodología de Trabajo y Resolución de Problemas
+      if (/\b(metodolog[ií]a|problemas complejos|enfoque anal[ií]tico|problem solving|decision making|c[oó]mo resuelves|c[oó]mo abordas|m[eé]todo)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Daniela's Problem-Solving Methodology:**\n\nDaniela approaches complex business challenges through a structured, evidence-based 4-stage framework:\n\n1. **Strategic Framing & Contextualization:**\n   She begins by framing the business objective—aligning stakeholders, defining clear success metrics, and identifying the root cause rather than treating superficial symptoms.\n2. **Rigorous Data Exploration (EDA):**\n   Leveraging her Data Science background (RStudio, Excel, Power BI), she audits data integrity, validates correlations, and uncovers underlying trends without bias.\n3. **Pragmatic Solution Modeling:**\n   She designs actionable, scalable interventions—translating quantitative findings into clear business strategies with measurable ROI.\n4. **Iterative Execution & Feedback:**\n   Experienced in corporate processes at LICUAS S.A., she implements solutions with operational discipline, tracking KPIs continuously to ensure sustained impact.`;
+        }
+        return `**Metodología de Trabajo y Resolución de Problemas de Daniela:**\n\nDaniela aborda los retos complejos mediante un enfoque estructurado en 4 fases, combinando el rigor científico con la viabilidad empresarial:\n\n1. **Definición Estratégica del Desafío:**\n   Parte siempre de entender la raíz del problema de negocio y los objetivos de la organización, alineando los KPIs de éxito antes de plantear cualquier desarrollo técnico.\n2. **Exploración Analítica Rigurosa (EDA):**\n   Aprovechando su formación en Data Science (RStudio, Excel avanzado, Power BI), audita la fiabilidad de las fuentes de datos, analiza distribuciones y valida correlaciones estadísticas para evitar sesgos o falsas asunciones.\n3. **Modelado y Formulación de Soluciones Pragmáticas:**\n   Diseña propuestas orientadas a resultados concretos, asegurando que cada visualización o modelo predictivo aporte una ventaja competitiva o un ahorro operativo medible.\n4. **Implementación y Medición de Impacto:**\n   Con la disciplina adquirida en la gestión diaria de LICUAS S.A., monitoriza la ejecución de forma sistemática y ajusta los procesos basándose en la retroalimentación continua del equipo.`;
+      }
+
+      // 9. Herramientas Técnicas, Business Intelligence y Cloud
+      if (/\b(herramienta|herramientas|power bi|excel|rstudio|azure|aws|cloud|tools|software|stack|competencias t[eé]cnicas)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Technical Stack & Analytical Tools:**\n\n• **Business Intelligence & Data Analysis:**\n  - **Microsoft Power BI (Certified):** Interactive dashboard design, DAX formulas, data modeling, and corporate KPI reporting.\n  - **Microsoft Excel (Certified Advanced):** Complex financial modeling, PivotTables, advanced lookup functions, and analytical automation.\n  - **RStudio:** Exploratory Data Analysis (EDA), statistical computing, multivariate correlation matrices, and data visualization (ggplot2).\n• **Cloud, Big Data & Artificial Intelligence:**\n  - **Microsoft Azure (Certified):** Cloud fundamentals, data storage, and compute services.\n  - **AWS:** Academic lab implementations with cloud architectures.\n  - **Artificial Intelligence:** Applied ML concepts for business analytics and strategic decision support.\n• **Enterprise Management Software:** Microsoft AX (ERP), Scan Visio, FACE, and Facturae.`;
+        }
+        return `**Ecosistema Técnico y Herramientas Analíticas de Daniela:**\n\n• **Business Intelligence y Analítica Cuantitativa:**\n  - **Microsoft Power BI (Certificada):** Modelado de datos relacionales, formulación DAX, diseño de cuadros de mando interactivos y reporting visual ejecutivo.\n  - **Microsoft Excel (Certificada Nivel Avanzado):** Modelización financiera, tablas dinámicas avanzadas, macros y análisis de sensibilidad de negocio.\n  - **RStudio:** Análisis exploratorio de datos (EDA), matrices de correlación, distribuciones estadísticas multivariables y visualización avanzada.\n• **Cloud Computing e Inteligencia Artificial:**\n  - **Microsoft Azure (Certificada):** Fundamentos de arquitectura en la nube, gestión de almacenamiento y servicios de datos.\n  - **AWS:** Prácticas académicas en despliegue y gestión de infraestructura cloud.\n  - **Inteligencia Artificial:** Conocimiento conceptual y práctico de modelos de Machine Learning y Big Data orientados a optimizar la toma de decisiones corporativas.\n• **Software de Gestión Empresarial:** ERP Microsoft Dynamics AX, Scan Visio, FACE y Facturae.`;
+      }
+
+      // 10. Proyectos Académicos y Estratégicos
+      if (/\b(pure beauty|healthy snacks|tfg|disney|branding|proyectos destacados|tus proyectos|qu[eé] proyectos)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Featured Academic & Strategic Projects:**\n\n1. **Data Science & Multivariate Analytics:**\n   Exploratory data analysis in RStudio and Excel examining complex distributions, correlation matrices, box plots, and dispersion trends to extract actionable business insights.\n2. **TFG - Disney & Experiential Branding:**\n   Academic research thesis entitled *"The integration of emotional branding, sensory advertising and experiential public relations: The journey from brand promise to the theme park experience"*. Combined Bernd H. Schmitt's experiential framework with a quantitative perception survey of 89 participants using Likert scales.\n3. **Business Plans & Corporate Entrepreneurship:**\n   Strategic and financial plans for *Pure Beauty* (an omnichannel D2C clean cosmetics brand) and *Healthy Snacks* (functional nutrition for university students).`;
+        }
+        return `**Proyectos Académicos y Estratégicos Destacados:**\n\n1. **Data Science y Analítica Exploratoria:**\n   Proyecto integral en RStudio y Excel aplicando análisis multivariante, matrices de correlación, histogramas y detección de patrones para sustentar decisiones estratégicas de negocio.\n2. **Trabajo Fin de Grado (TFG) - Disney y Branding Experiencial:**\n   Investigación académica de alto nivel: *"The integration of emotional branding, sensory advertising and experiential public relations: The journey from brand promise to the theme park experience"*. Combinó el marco cualitativo de Bernd H. Schmitt sobre módulos estratégicos experienciales con un estudio empírico cuantitativo mediante encuesta a 89 participantes con escala Likert.\n3. **Modelos de Negocio y Emprendimiento:**\n   Desarrollo de planes integrales de viabilidad financiera y comercial para *Pure Beauty* (marca cosmética D2C y omnicanal) y *Healthy Snacks* (alimentación saludable y funcional enfocada al público universitario).`;
+      }
+
+      // 11. Formación Académica (ESIC & IB)
+      if (/\b(estudi[oó]|estudiado|estudios|formaci[oó]n|carrera|universidad|grado|doble grado|esic|ade|data science|bachillerato|ib|education|degree|studies)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Academic Background of Daniela Aceña:**\n\n1. **ESIC University (Madrid, Spain | 2022–2027):**\n   • **Double Degree:** Bachelor’s Degree in Business Administration and Management (taught 100% in English) & Bachelor’s in Data Science.\n   • **Core Disciplines:** Corporate Strategy, Financial Analytics, Exploratory Data Analysis (EDA), Predictive Modeling, Big Data Systems, Cloud Infrastructures, and Applied AI.\n2. **INSEEC Business School (Paris, France | 2024):**\n   • Academic Erasmus Exchange in Business Administration, immersed in a global corporate mindset.\n3. **International Baccalaureate (IB Diploma):**\n   • Rigorous pre-university program instilling advanced research methodology, critical reasoning, and bilingual excellence.`;
+        }
+        return `**Formación Académica de Daniela Aceña:**\n\n1. **ESIC University (Madrid, España | 2022–2027):**\n   • **Doble Titulación:** Bachelor’s Degree in Business Administration and Management (cursado íntegramente en inglés) y Grado en Data Science.\n   • **Áreas de especialización:** Finanzas corporativas, estrategia empresarial, análisis exploratorio de datos (EDA), modelado predictivo, Big Data, Cloud Computing e Inteligencia Artificial aplicada.\n2. **INSEEC Business School (París, Francia | 2024):**\n   • Programa de intercambio Erasmus en Business Administration, cursado en inglés en un entorno multicultural de prestigio europeo.\n3. **Bachillerato Internacional (IB Diploma):**\n   • Formación preuniversitaria de máxima exigencia orientada al pensamiento crítico, investigación estructurada y rigor intelectual.`;
+      }
+
+      // 12. Idiomas y Proyección Internacional
+      if (/\b(idioma|idiomas|ingl[eé]s|alem[aá]n|espa[nñ]ol|languages|english|german|c1|b1)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Language Proficiency & International Fluency:**\n\n• **Spanish:** Native speaker.\n• **English:** **C1 Advanced** certified by **Cambridge English**.\n  - Full university coursework in English (Bachelor’s in Business Administration at ESIC).\n  - International Erasmus exchange in Paris.\n  - Capable of professional presentations, corporate negotiations, and technical documentation.\n• **German:** **B1 Intermediate** proficiency for cross-European business interactions.`;
+        }
+        return `**Competencias Lingüísticas y Fluidez Internacional:**\n\n• **Español:** Nativo.\n• **Inglés:** **C1 Avanzado**, acreditado formalmente con el **Cambridge Certificate**.\n  - Su grado en Administración y Dirección de Empresas en ESIC se cursa **100% en inglés**.\n  - Experiencia en París y presentaciones de consultoría en inglés con total solvencia profesional.\n• **Alemán:** **B1 Intermedio**, aportando una valiosa base para relaciones empresariales en el mercado centroeuropeo.`;
+      }
+
+      // 13. Certificaciones Oficiales
+      if (/\b(certificaci[oó]n|certificaciones|certificados|t[ií]tulos|certifications|cambridge|acreditaciones)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Official Certifications & Credentials:**\n\n• **Microsoft Power BI Certification** (Advanced visual analytics and dashboard modeling)\n• **Microsoft Excel Certification** (Advanced data manipulation, formulas, and PivotTables)\n• **Microsoft Azure Certification** (Cloud fundamentals and architecture)\n• **Cambridge English Certificate (C1 Advanced)**\n• **International Baccalaureate (IB Diploma)**`;
+        }
+        return `**Certificaciones y Credenciales Oficiales de Daniela:**\n\n• **Certificación Oficial en Microsoft Power BI** (Modelado de datos y visualización analítica)\n• **Certificación Oficial en Microsoft Excel** (Nivel Avanzado para finanzas y análisis de negocio)\n• **Certificación Oficial en Microsoft Azure** (Fundamentos de Cloud Computing y gestión de datos)\n• **Certificación Cambridge English (Nivel C1 Avanzado)**\n• **Diploma del Bachillerato Internacional (IB)**`;
+      }
+
+      // 14. Motivación y Objetivos Profesionales
+      if (/\b(motivaci[oó]n|objetivo|aspiraci[oó]n|qu[eé] buscas|inter[eé]s|qu[eé] te motiva|carrera profesional|career goals|qu[eé] te gusta)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Professional Aspirations & Driving Motivation:**\n\n• **Primary Fields of Interest:** Business Analytics, Strategic Consulting, Financial Analytics, and Operations Optimization.\n• **Core Passion:** Daniela is driven by turning raw, chaotic datasets into clear, actionable business strategies that directly impact the bottom line and operational performance.\n• **Career Vision:** Becoming a key contributor who connects senior management strategy with data engineering and artificial intelligence capabilities.`;
+        }
+        return `**Motivación, Aspiraciones Profesionales y Áreas de Interés:**\n\n• **Áreas de interés prioritario:** Business Analytics, Consultoría Estratégica, Análisis Financiero, Optimización de Procesos y Transformación Digital.\n• **Su mayor motivación:** Conectar la visión analítica con la realidad del negocio, transformando datos dispersos en decisiones rentables, sostenibles e intuitivas para los comités de dirección.\n• **Visión a futuro:** Consolidarse como un perfil clave que lidere proyectos donde la Inteligencia Artificial y la ciencia de datos potencien el crecimiento corporativo.`;
+      }
+
+      // 15. Disponibilidad e Incorporación
+      if (/\b(disponibilidad|incorporaci[oó]n|jornada|remoto|h[ií]brido|presencial|cu[aá]ndo|availability|schedule|tiempo completo|tiempo parcial|cu[aá]ndo empezar)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Professional Availability:**\n\n• **Current Status:** Advanced undergraduate student completing her dual degree at ESIC University.\n• **Target Roles:** Graduate programs, business/data analytics internships, and corporate junior analyst positions.\n• **Work Modality & Location:** Madrid, Spain (open to hybrid, in-office, or international assignments).\n• **Exact Schedule & Start Date:** Flexible and open to confirmation directly with Daniela based on academic alignment.`;
+        }
+        return `**Disponibilidad Profesional de Daniela:**\n\n• **Estado actual:** Estudiante universitaria en los últimos cursos del Doble Grado en ESIC University.\n• **Objetivo:** Prácticas curriculares/extracurriculares, programas de graduados o posiciones junior en Business Analytics, consultoría, finanzas y administración corporativa.\n• **Modalidad y ubicación:** Madrid (abierta a modalidades presenciales, híbridas o proyectos con proyección internacional).\n• **Fecha de incorporación y jornada:** Flexibles, pendientes de confirmar directamente con ella para adaptar el calendario formativo a las necesidades de la empresa.`;
+      }
+
+      // 16. Contacto y Agendamiento de Entrevistas
+      if (/\b(contact|contacto|contactar|correo|email|tel[eé]fono|m[oó]vil|llamar|phone|linkedin|hablar con ella|entrevista)\b/i.test(q)) {
+        if (isEnglish) {
+          return `**Contact Daniela Aceña Directly:**\n\n• **Email:** [daniela.acena@icloud.com](mailto:daniela.acena@icloud.com)\n• **Phone:** [+34 673 20 75 39](tel:+34673207539)\n• **Location:** Madrid, Spain\n\nFeel free to write to her or call to arrange an in-person or video interview!`;
+        }
+        return `**Datos de Contacto Directo de Daniela Aceña:**\n\n• **Correo electrónico:** [daniela.acena@icloud.com](mailto:daniela.acena@icloud.com)\n• **Teléfono de contacto:** [+34 673 20 75 39](tel:+34673207539)\n• **Ubicación:** Madrid, España\n\nPuedes contactar con ella directamente por correo o teléfono para agendar una entrevista o ampliar cualquier detalle de su perfil.`;
+      }
+
+      // 17. Agradecimientos y Cortesía
+      if (/\b(gracias|muchas gracias|genial|perfecto|adi[oó]s|hasta luego|chao|thank|thanks|bye|excelente)\b/i.test(q)) {
+        if (isEnglish) {
+          return `Thank you very much for your interest in **Daniela Aceña's profile**! If you need any further insights or wish to schedule an interview, please reach out directly at **daniela.acena@icloud.com** or **+34 673 20 75 39**. Have a wonderful day!`;
+        }
+        return `¡Muchísimas gracias por tu interés en el perfil de **Daniela Aceña**! Si necesitas cualquier otra consulta o deseas concertar una entrevista, no dudes en contactar directamente con ella en **daniela.acena@icloud.com** o al **+34 673 20 75 39**. ¡Que tengas un excelente día!`;
+      }
+
+      // 18. RESPUESTA MAESTRA CONTEXTUAL POR DEFECTO (EXTRAPOLACIÓN INTELIGENTE)
+      // Ante cualquier pregunta abierta, de entrevista situacional o imprevista, conecta con todo su CV de forma impecable
+      if (isEnglish) {
+        return `**Professional Perspective from Daniela Aceña's Background:**\n\nAn insightful question. To address this from Daniela's perspective, we must consider the core pillar that defines her career: **the strategic synergy between Business Administration (ADE) and Data Science**.\n\nThroughout her double degree at **ESIC University**, her operational tenure at **LICUAS S.A.**, and her international immersion at **INSEEC Paris**, Daniela approaches unexpected challenges and business scenarios through three verified strengths:\n\n1. **Evidence-Based & Structured Reasoning:**\n   Rather than relying on intuition alone, her Data Science training (Power BI, Excel, RStudio, Azure) equips her to audit the underlying facts, identify root causes, and model objective outcomes before taking action.\n2. **Operational Pragmatism & Accountability:**\n   Her experience in Corporate Administration 360 at LICUAS S.A. grounded her in real-world business mechanics—where process efficiency, stakeholder coordination, and audit accuracy are essential.\n3. **Intercultural Agility & Critical Thinking:**\n   Having studied abroad in Paris and earned the International Baccalaureate (IB), she adapts swiftly to new environments, methodologies, and team dynamics.\n\nTo discuss how Daniela would tackle this specific challenge in your organization, I warmly invite you to connect directly with her:\n• **Email:** [daniela.acena@icloud.com](mailto:daniela.acena@icloud.com)\n• **Phone:** [+34 673 20 75 39](tel:+34673207539)`;
+      }
+
+      return `**Perspectiva Profesional desde el Perfil de Daniela Aceña:**\n\nExcelente cuestión. Para responder a este planteamiento desde la visión profesional de Daniela, es fundamental partir de su rasgo más diferencial: **la sinergia estratégica entre la visión de negocio (ADE) y el rigor cuantitativo de la ciencia de datos**.\n\nA través de su formación en el Doble Grado en **ESIC University**, su experiencia operativa en **LICUAS S.A.** y su inmersión internacional en **INSEEC París**, Daniela aborda este tipo de situaciones y desafíos basándose en tres pilares demostrados en su trayectoria:\n\n1. **Pensamiento Analítico y Basado en Evidencia:**\n   Formada en Data Science (Power BI, Excel avanzado, RStudio, Azure), ante cualquier desafío formula hipótesis contrastables y analiza los datos reales antes de actuar, garantizando soluciones fundamentadas y sin sesgos.\n2. **Pragmatismo y Madurez Operativa:**\n   Su experiencia en el departamento de Administración 360 de LICUAS S.A. le enseñó a lidiar con la realidad del día a día empresarial: control de costes, relación con departamentos de compras y proveedores, y riguroso cumplimiento de plazos.\n3. **Adaptabilidad Global y Pensamiento Crítico:**\n   Su paso por INSEEC París cursando materias en inglés y su titulación del Bachillerato Internacional (IB) le otorgan una rápida capacidad para integrarse en equipos interdisciplinares y amoldarse a nuevas metodologías de trabajo.\n\nSi deseas profundizar en cómo Daniela abordaría este escenario específico dentro de tu empresa o equipo, te invito a coordinar una conversación directa con ella:\n• **Email:** [daniela.acena@icloud.com](mailto:daniela.acena@icloud.com)\n• **Teléfono:** [+34 673 20 75 39](tel:+34673207539)`;
+    }
+
+    /* Enviar mensaje en el chat con tolerancia total a fallos */
+    async function handleSendMessage() {
+      const input = document.getElementById('chatInput');
+      const text = input.value.trim();
+      if (!text || isGenerating) return;
+
+      appendMessage('user', text);
+      input.value = '';
+      autoResizeTextarea(input);
+
+      // Si no hay API Key configurada, respondemos al instante con la base de conocimiento oficial
+      if (!currentApiKey || currentApiKey.trim().length < 10) {
+        showTypingIndicator();
+        setTimeout(() => {
+          removeTypingIndicator();
+          const answer = getKnowledgeBaseResponse(text);
+          appendMessage('bot', answer);
+        }, 400);
+        return;
+      }
+
+      // Si hay API Key configurada, intentamos consultar a la API de Gemini con reintento automático
+      isGenerating = true;
+      document.getElementById('chatSendBtn').disabled = true;
+      showTypingIndicator();
+
+      try {
+        const responseText = await callGeminiApi(text);
+        removeTypingIndicator();
+        appendMessage('bot', responseText);
+
+        conversationHistory.push({ role: "user", parts: [{ text }] });
+        conversationHistory.push({ role: "model", parts: [{ text: responseText }] });
+
+        if (conversationHistory.length > 16) {
+          conversationHistory = conversationHistory.slice(-16);
+        }
+      } catch (err) {
+        removeTypingIndicator();
+        console.warn('[Gemini API Fallback]:', err);
+        // Respaldo inmediato con la base de datos oficial: el asistente NUNCA deja al usuario sin respuesta
+        const fallbackAnswer = getKnowledgeBaseResponse(text);
+        appendMessage('bot', fallbackAnswer);
+      } finally {
+        isGenerating = false;
+        document.getElementById('chatSendBtn').disabled = false;
+        document.getElementById('chatInput').focus();
+      }
+    }
+
+    function sendQuickPrompt(promptText) {
+      const input = document.getElementById('chatInput');
+      input.value = promptText;
+      handleSendMessage();
+    }
+
+    function handleChatKeydown(e) {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        handleSendMessage();
+      }
+    }
+
+    function autoResizeTextarea(textarea) {
+      textarea.style.height = 'auto';
+      textarea.style.height = Math.min(textarea.scrollHeight, 120) + 'px';
+    }
+
+    function appendMessage(sender, text) {
+      const container = document.getElementById('chatMessages');
+      const msgGroup = document.createElement('div');
+      msgGroup.className = `msg-group msg-${sender}`;
+
+      const avatar = document.createElement('div');
+      avatar.className = 'msg-avatar';
+      avatar.textContent = sender === 'user' ? 'Tú' : 'AI';
+
+      const bubble = document.createElement('div');
+      bubble.className = 'msg-bubble';
+
+      if (sender === 'bot') {
+        bubble.innerHTML = formatMarkdown(text);
+      } else {
+        bubble.textContent = text;
+      }
+
+      msgGroup.appendChild(avatar);
+      msgGroup.appendChild(bubble);
+      container.appendChild(msgGroup);
+
+      container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+    }
+
+    function showTypingIndicator() {
+      const container = document.getElementById('chatMessages');
+      const indicator = document.createElement('div');
+      indicator.className = 'msg-group msg-bot';
+      indicator.id = 'activeTypingIndicator';
+      indicator.innerHTML = `
+        <div class="msg-avatar">AI</div>
+        <div class="typing-indicator">
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+        </div>
+      `;
+      container.appendChild(indicator);
+      container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+    }
+
+    function removeTypingIndicator() {
+      const indicator = document.getElementById('activeTypingIndicator');
+      if (indicator) indicator.remove();
+    }
+
+    function clearChatHistory() {
+      conversationHistory = [];
+      const container = document.getElementById('chatMessages');
+      container.innerHTML = `
+        <div class="msg-group msg-bot">
+          <div class="msg-avatar">AI</div>
+          <div class="msg-bubble">
+            <p>¡Conversación reiniciada! Pregúntame lo que desees sobre la trayectoria, proyectos o habilidades de Daniela.</p>
+          </div>
+        </div>
+      `;
+      showToast('Historial del chat reiniciado');
+    }
+
+    /* Formateador Markdown */
+    function formatMarkdown(text) {
+      if (!text) return '';
+      let escaped = text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+
+      escaped = escaped.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      escaped = escaped.replace(/\*(.*?)\*/g, '<em>$1</em>');
+      escaped = escaped.replace(/`([^`]+)`/g, '<code>$1</code>');
+      escaped = escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:var(--primary);font-weight:600;text-decoration:underline;">$1</a>');
+
+      const lines = escaped.split('\n');
+      let html = '';
+      let inList = false;
+
+      for (let line of lines) {
+        line = line.trim();
+        if (line.startsWith('• ') || line.startsWith('- ') || line.startsWith('* ')) {
+          if (!inList) {
+            html += '<ul>';
+            inList = true;
+          }
+          html += `<li>${line.substring(2)}</li>`;
+        } else if (/^\d+\.\s/.test(line)) {
+          if (!inList) {
+            html += '<ol>';
+            inList = true;
+          }
+          html += `<li>${line.replace(/^\d+\.\s/, '')}</li>`;
+        } else {
+          if (inList) {
+            html += inList ? '</ul>' : '</ol>';
+            inList = false;
+          }
+          if (line.length > 0) {
+            html += `<p>${line}</p>`;
+          }
+        }
+      }
+      if (inList) html += '</ul>';
+      return html;
+    }
+
+    /* ==========================================================================
+       5. UTILIDADES (COPIAR, TOAST, MENÚ MÓVIL)
+       ========================================================================== */
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const text = document.getElementById('toastMessage');
+      text.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3200);
+    }
+
+    function copyToClipboard(text, successMessage) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(successMessage || 'Copiado al portapapeles');
+        }).catch(() => fallbackCopy(text, successMessage));
+      } else {
+        fallbackCopy(text, successMessage);
+      }
+    }
+
+    function fallbackCopy(text, successMessage) {
+      const tempInput = document.createElement('input');
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      showToast(successMessage || 'Copiado al portapapeles');
+    }
+
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobileDrawer');
+      drawer.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
